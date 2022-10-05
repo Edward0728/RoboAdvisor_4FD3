@@ -1,7 +1,7 @@
 { "intents": [
     {"tag": "greetings",
      "patterns": ["hello","hey","hi","good day","what's up?","how is it going","how are you?"],
-     "responses": ["Hello!","Hey!","What can I do for you?", "How may I help you?"]
+     "responses": ["Hello! What can I do for you?","Hey! What can I do for you?", "How may I help you?"]
     },
     {"tag": "goodbye",
     "patterns": ["cya","See you later","Goodbye","I am leaving","Have a good day","Bye","cao","see ya"],
@@ -33,7 +33,7 @@
     },
     {"tag": "amount",
     "patterns": ["How much money do you want to invest?","What is your investment amount?"],
-    "responses": ["5,000-20,000","20,000-50,000", "50,000-100,000", "100,000 above"] 
+    "responses": ["$5,000-$20,000","$20,000-$50,000", "$50,000-$100,000", "$100,000 above"] 
     },
     {"tag": "portfolio",
     "patterns": ["Please select your portfolio combination (stock/mutual fund): "],
