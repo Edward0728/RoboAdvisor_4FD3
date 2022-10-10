@@ -8,6 +8,12 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 
+# getting nltk dependecies
+nltk.download('words')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
 lemmatizer = WordNetLemmatizer()
 communications = json.loads(open('communications.json').read())
 
