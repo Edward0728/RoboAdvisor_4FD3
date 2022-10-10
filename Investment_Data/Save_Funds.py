@@ -1,11 +1,10 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-# Import Select class
 from selenium.webdriver.support.ui import Select
 
 browser = webdriver.Chrome(ChromeDriverManager().install())
 usernameStr = 'yaoh17@mcmaster.ca'
-passwordStr = 'Edward4FD3!'
+passwordStr = '**********'
 
 browser.get('https://sec.theglobeandmail.com/user/login?intcmp=site-header')
 
