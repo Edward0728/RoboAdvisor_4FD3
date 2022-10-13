@@ -33,7 +33,6 @@ for i in symbol_list[0:-1]:
     risk_list.append(risk)
 
 #print(risk_list)     
-# dictionary of lists  
 risk_dict = {'risk': risk_list}      
 risk_df = pd.DataFrame(risk_dict) 
 all_df = pd.concat([both_df,risk_df], axis = 1)
