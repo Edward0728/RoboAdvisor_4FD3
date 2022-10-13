@@ -1,6 +1,3 @@
-import requests
-import datetime
-
 import http.client
 
 conn = http.client.HTTPSConnection("api.webscrapingapi.com")
