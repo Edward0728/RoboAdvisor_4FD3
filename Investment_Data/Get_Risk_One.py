@@ -1,9 +1,6 @@
 import requests
 import datetime
 
-
-#from beautifulsoup4 import BeautifulSoup
-
 import http.client
 
 conn = http.client.HTTPSConnection("api.webscrapingapi.com")
