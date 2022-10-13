@@ -54,6 +54,7 @@ browser.implicitly_wait(10)
 
 browser.close()
 
+# PART 2
 # this step need to be adjusted as file name changes from day to day.
 main_df = pd.read_csv(r'C:/Users/forfu/Downloads/funds-market-leaders-export-2022-10-10.csv')
 performance_df = pd.read_csv(r'C:/Users/forfu/Downloads/funds-market-leaders-export-2022-10-10 (6).csv')
