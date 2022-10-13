@@ -19,6 +19,7 @@ for i in symbol_list[0:-1]:
     res = conn.getresponse()
     data = str(res.read())
     #print(type(data))
+    
     try:
         risk_index = data.index(find)
     except:
