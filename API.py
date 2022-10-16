@@ -4,10 +4,12 @@ from StockPlot import stockplot_request
 
 class mutualFund():
 
+
   # should return the information of looking symbol
   def get(symbol):
     fund_information = {1,2,3}
     return fund_information
+
 
   # should return the list of mutual funds that fall in the looking risk level
   def getRisk(level):
@@ -34,9 +36,7 @@ class stock():
     stock_graph = stockplot_request(symbol)
     return stock_graph
 
-
-# stock.get_info('AAPL')
-print(stock.get_info('AMZN'))
+stock.get_info('AMZN')
 stock.get_graph('AMZN')
 
 # stock = 'TLSA'
