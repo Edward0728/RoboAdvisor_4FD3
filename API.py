@@ -7,7 +7,7 @@ class mutualFund():
 
   # should return the information of looking symbol
   def get(symbol):
-    fund_information = {1,2,3}
+    fund_information = {1, 2, 3}
     return fund_information
 
 
