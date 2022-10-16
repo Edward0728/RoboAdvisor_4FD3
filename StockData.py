@@ -14,5 +14,4 @@ def stockinfo_request(symbol):
 
     r = requests.get(url)
     data = r.json()
-
-    print(data)
+    return data

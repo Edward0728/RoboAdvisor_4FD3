@@ -1,20 +1,25 @@
 # This is to build an interface between front end and back end
 from StockData import stockinfo_request
 from StockPlot import stockplot_request
+from CSV_retriver import fundinfo_request
+from CSV_retriver import fundlist_request
+
 
 class mutualFund():
 
-
-  # should return the information of looking symbol
+# should return the information of looking symbol
   def get(symbol):
-    fund_information = {1, 2, 3}
+    fund_information = fundinfo_request(symbol)
     return fund_information
 
-
-  # should return the list of mutual funds that fall in the looking risk level
+# should return the list of mutual funds that fall in the looking risk level
   def getRisk(level):
-    fund_list = {4,5,6}
+    fund_list = fundlist_request(level)
     return fund_list
+
+
+print(mutualFund.get('RBF460.CF'))
+print(mutualFund.getRisk('Low'))
 
 
 # How the frond end consumes the functions, e.g.
@@ -36,8 +41,8 @@ class stock():
     stock_graph = stockplot_request(symbol)
     return stock_graph
 
-stock.get_info('AMZN')
-stock.get_graph('AMZN')
+# stock.get_info('AMZN')
+# stock.get_graph('AMZN')
 
 # stock = 'TLSA'
 # stock = 'AAPL'
