@@ -30,12 +30,13 @@ class stock():
     stock_info = stockinfo_request(symbol)
     return stock_info
 
-  def get_graph(graph):
-    stock_graph = stockplot_request(graph)
+  def get_graph(symbol):
+    stock_graph = stockplot_request(symbol)
     return stock_graph
 
 
-stock.get_info('AAPL')
-stock.get_graph('AAPL')
+# stock.get_info('AAPL')
+print(stock.get_info('AAPL'))
 
+stock.get_graph('AAPL')
 
