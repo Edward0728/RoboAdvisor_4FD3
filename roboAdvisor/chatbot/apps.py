@@ -1,6 +1,7 @@
 from django.apps import AppConfig
 from chatbot import chatbot
 from flask import Flask, render_template, request
+from chatterbot.conversation import Statement
 
 
 class ChatbotConfig(AppConfig):
@@ -18,7 +19,8 @@ def home():
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
-    return str(chatbot.get_response(userText))
+    input_statement = Statement(text=userText)
+    return str(chatbot.generate_response(input_statement))
 
 if __name__ == "__main__":
     app.run() 
