@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import Select
 
 browser = webdriver.Chrome(ChromeDriverManager().install())
 usernameStr = 'yaoh17@mcmaster.ca'
-passwordStr = '**********'
+passwordStr = 'Edward4FD3!'
 
 browser.get('https://sec.theglobeandmail.com/user/login?intcmp=site-header')
 

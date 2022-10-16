@@ -36,7 +36,10 @@ class stock():
 
 
 # stock.get_info('AAPL')
-print(stock.get_info('AAPL'))
+print(stock.get_info('AMZN'))
+stock.get_graph('AMZN')
 
-stock.get_graph('AAPL')
-
+# stock = 'TLSA'
+# stock = 'AAPL'
+# stock = 'AMZN'
+# stock = 'IBM'
