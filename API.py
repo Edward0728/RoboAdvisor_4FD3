@@ -41,8 +41,8 @@ class stock():
     stock_graph = stockplot_request(symbol)
     return stock_graph
 
-# stock.get_info('AMZN')
-# stock.get_graph('AMZN')
+print(stock.get_info('AMZN'))
+stock.get_graph('AMZN')
 
 # stock = 'TLSA'
 # stock = 'AAPL'
