@@ -4,14 +4,15 @@ from selenium.webdriver.support.ui import Select
 
 import http.client
 import pandas as pd
+import time
 
 browser = webdriver.Chrome(ChromeDriverManager().install())
 usernameStr = 'yaoh17@mcmaster.ca'
-passwordStr = '********'
+passwordStr = 'Edward4FD3!'
 
 browser.get('https://sec.theglobeandmail.com/user/login?intcmp=site-header')
 
-browser.implicitly_wait(8)
+browser.implicitly_wait(60)
 
 username = browser.find_element_by_id('inputEmail')
 username.send_keys(usernameStr)
@@ -21,7 +22,7 @@ password.send_keys(passwordStr)
 browser.implicitly_wait(8)
 SignInButton = browser.find_element_by_xpath('//button[normalize-space()="Log in"]')
 SignInButton.click()
-browser.implicitly_wait(88)
+browser.implicitly_wait(60)
 
 InvestingButton = browser.find_element_by_partial_link_text('INVESTING')
 InvestingButton.click()
@@ -37,27 +38,30 @@ browser.implicitly_wait(8)
 
 FulllistButton =  browser.find_element_by_partial_link_text('Full list')
 FulllistButton.click()
-browser.implicitly_wait(8)
+browser.implicitly_wait(60)
 
 Download_Main = browser.find_element_by_xpath('//button[normalize-space()="Download"]')
 Download_Main.click()
+time.sleep(10)
 
 x = browser.find_element_by_id('dataTableDropdownSelect')
 drop = Select(x)
 
 drop.select_by_value('{"fields":"symbol,symbolName,lastPrice,percentChangeYtd,percentChange1m,percentChange3m,percentChange1y,highPrice1y,lowPrice1y"}')
-browser.implicitly_wait(8)
+browser.implicitly_wait(60)
 
 Download_Performance = browser.find_element_by_xpath('//button[normalize-space()="Download"]')
 Download_Performance.click()
-browser.implicitly_wait(10)
+time.sleep(10)
+browser.implicitly_wait(8)
 
 browser.close()
 
 # PART 2
 # this step need to be adjusted as file name changes from day to day.
-main_df = pd.read_csv(r'C:/Users/forfu/Downloads/funds-market-leaders-export-2022-10-10.csv')
-performance_df = pd.read_csv(r'C:/Users/forfu/Downloads/funds-market-leaders-export-2022-10-10 (6).csv')
+date = '2022-10-23'  # we could get input for this value
+main_df = pd.read_csv(f'C:/Users/forfu/Downloads/funds-market-leaders-export-{date}.csv')
+performance_df = pd.read_csv(f'C:/Users/forfu/Downloads/funds-market-leaders-export-{date} (1).csv')
 
 both_df = pd.concat([performance_df, main_df[['Change', '% Change', 'Assets Under Management','Time']]], axis = 1)
 symbol_list = both_df['Symbol'].values.tolist()
