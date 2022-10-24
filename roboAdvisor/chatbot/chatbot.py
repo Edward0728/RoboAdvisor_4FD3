@@ -1,9 +1,18 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.conversation import Statement
 
 # Creating ChatBot Instance
-chatbot = ChatBot('RoboBot')
+chatbot = ChatBot(
+  'RoboBot',
+  logic_adapters=[
+    {
+      'import_path': 'mutualfund.MutualFundLogicAdapter'
+    },
+    'chatterbot.logic.BestMatch'
+  ]
+  )
 
  # Training with Personal Ques & Ans 
 conversation = [
