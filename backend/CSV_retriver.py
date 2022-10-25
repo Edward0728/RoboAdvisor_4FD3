@@ -12,12 +12,12 @@ mutualFund_CSV = pd.read_csv (full_path)
 def fundinfo_request(symbol):
     fund = symbol
     fund_info = mutualFund_CSV.loc[mutualFund_CSV['Symbol'] == fund]
-    data = fund_info.to_json()
+    data = fund_info
     return data
 
 
-def fundlist_request(symbol):
-    risk_level = symbol
+def fundlist_request(risk):
+    risk_level = risk
     fund_list = mutualFund_CSV.loc[mutualFund_CSV['risk'] == risk_level, 'Symbol'].tolist()
     data = json.dumps(fund_list)
     return data

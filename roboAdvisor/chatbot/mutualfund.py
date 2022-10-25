@@ -1,9 +1,9 @@
 from chatterbot.logic import LogicAdapter
 from chatterbot.conversation import Statement
-from API.mutualFund import get
 import sys
+sys.path.append("../..")
 
-sys.path.insert(0, '/Users/hw/digital-garage/RoboAdvisor_4FD3/backend')
+from backend.API import mutualFund
 
 class MutualFundLogicAdapter(LogicAdapter):
   def __init__(self, chatbot, **kwargs):
@@ -17,7 +17,8 @@ class MutualFundLogicAdapter(LogicAdapter):
     else:
       return False
   def process(self, input_statement, additional_response_selection_parameters):
-    
-    selected_statement = Statement(text='getting %s ..... %s' % input_statement.text % get('RBF460.CF'))
+    data = mutualFund.getRisk('Low')
+    print(data)
+    selected_statement = Statement(text='getting %s \n ..... %s' %(input_statement.text, data))
     return selected_statement
   
