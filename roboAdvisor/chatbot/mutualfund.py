@@ -17,7 +17,7 @@ class MutualFundLogicAdapter(LogicAdapter):
     else:
       return False
   def process(self, input_statement, additional_response_selection_parameters):
-    data = mutualFund.getRisk('Low')
+    data = mutualFund.getRisk('Medium')
     print(data)
     selected_statement = Statement(text='getting %s \n ..... %s' %(input_statement.text, data))
     return selected_statement

@@ -17,6 +17,11 @@ class mutualFund():
     fund_list = fundlist_request(level)
     return fund_list
 
+  def getSize():
+
+  def getPercentile():
+  
+  def getVolatity():
 
 # print(mutualFund.get('RBF460.CF'))
 # print(mutualFund.getRisk('Low'))
