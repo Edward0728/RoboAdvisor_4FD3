@@ -109,11 +109,11 @@ for i in all_df['Assets Under Management']:
     #print(type(int(i[0:-1].replace(',',''))))
     size = int(i[0:-1].replace(',',''))
     if size >= 10000:
-        size_list.append('Large')
+        size_list.append('large')
     elif size < 10000 and size >= 7500 :
-        size_list.append('Medium')
+        size_list.append('medium')
     else:
-        size_list.append('Small')
+        size_list.append('small')
 all_df['Size']= size_list
 
 #create percentile column
