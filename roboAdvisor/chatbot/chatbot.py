@@ -14,7 +14,7 @@ chatbot = ChatBot(
       'default_response': 'I am sorry, but I do not understand. I am still learning.',
       'maximum_similarity_threshold': 0.90
     }
-  ]
+  ],
   database_uri='sqlite:///database.sqlite3'
   #database_uri='sqlite:///C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/ChatBot/coronabot-chatterbot/database.sqlite3'
 )
