@@ -1,27 +1,38 @@
 # This is to build an interface between front end and back end
 from .StockData import stockinfo_request
 from .StockPlot import stockplot_request
-from .CSV_retriver import fundinfo_request
-from .CSV_retriver import fundlist_request
+import Fund_Selector as F
+#from .CSV_retriver import fundlist_request
 
 
 class mutualFund():
 
 # should return the information of looking symbol
   def get(symbol):
-    fund_information = fundinfo_request(symbol)
+    fund_information = F.fundinfo_request(symbol)
     return fund_information
 
 # should return the list of mutual funds that fall in the looking risk level
-  def getRisk(level):
-    fund_list = fundlist_request(level)
+  def getRisk(risk):
+    fund_list = F.riskfund_request(risk)
     return fund_list
 
-  def getSize():
+  def getSize(size):
+    fund_list = F.fundsize_request(size)
+    return fund_list
 
-  def getPercentile():
+  def getPercentile(percentile):
+    fund_list = F.fundrank_request(percentile)
+    return fund_list
   
-  def getVolatity():
+  def getVolatity(volatility):
+    fund_list = F.fundvolatility_request(volatility)
+    return fund_list
+
+  def getSolution(risk,size,percentile,volatility):
+    fund_list = F.final_solution(F.riskfund_request(risk),F.fundsize_request(size),F.fundrank_request(percentile),F.fundvolatility_request(volatility))
+    return fund_list
+  
 
 # print(mutualFund.get('RBF460.CF'))
 # print(mutualFund.getRisk('Low'))

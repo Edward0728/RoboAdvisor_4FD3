@@ -1,13 +1,15 @@
 from chatterbot.logic import LogicAdapter
 from chatterbot.conversation import Statement
+
 import sys
 sys.path.append("../..")
-
 from backend.API import mutualFund
+
 
 class MutualFundLogicAdapter(LogicAdapter):
   def __init__(self, chatbot, **kwargs):
     super().__init__(chatbot, **kwargs)
+  
   def can_process(self, statement):
     print(statement.text)
     if statement.text == 'mutual fund':
@@ -16,8 +18,9 @@ class MutualFundLogicAdapter(LogicAdapter):
       return True
     else:
       return False
-  def process(self, input_statement, additional_response_selection_parameters):
-    data = mutualFund.getRisk('Medium')
+
+  def process(self, input_statement,risk,size,percentile,volatility):
+    data = mutualFund.get_solution(risk,size,percentile,volatility)
     print(data)
     selected_statement = Statement(text='getting %s \n ..... %s' %(input_statement.text, data))
     return selected_statement

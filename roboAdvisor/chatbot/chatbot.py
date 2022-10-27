@@ -6,6 +6,7 @@ from chatterbot.conversation import Statement
 # Creating ChatBot Instance
 chatbot = ChatBot(
   'RoboBot',
+  storage_adapter='chatterbot.storage.SQLStorageAdapter',
   logic_adapters=[
     'chatterbot.logic.BestMatch',
     {
@@ -14,15 +15,15 @@ chatbot = ChatBot(
       'maximum_similarity_threshold': 0.90
     }
   ]
-  database_uri='sqlite:///database.sqlite3'
+  #database_uri='sqlite:///database.sqlite3'
   #database_uri='sqlite:///C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/ChatBot/coronabot-chatterbot/database.sqlite3'
-  )
+)
 
 # Training With Own Questions 
 trainer = ListTrainer(chatbot)
 
-training_data_quesans = open('./training_data/ques_ans.txt').read().splitlines()
-training_data_personal = open('./training_data/profile_ques.txt').read().splitlines()
+training_data_quesans = open('./training_data/profile_ques.txt').read().splitlines()
+training_data_personal = open('./training_data/recommendation_chat.txt').read().splitlines()
 
 training_data = training_data_quesans + training_data_personal
 

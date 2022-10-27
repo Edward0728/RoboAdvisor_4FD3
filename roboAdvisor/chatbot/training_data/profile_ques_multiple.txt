@@ -1,0 +1,19 @@
+"Hello","hey","hi","good day","what's up?","how is it going","how are you?",
+"Hello! What can I do for you?","Hey! What can I do for you?", "How may I help you?"
+"cya","See you later","Goodbye","I am leaving","Have a good day","Bye","cao","see ya",
+"Goodbye.","Talk to you later","Sad to see you go :(", "Have a nice day!"
+"how old are you?","what is your age?", "age?",
+"I am 21 years old.", "36 years.", "I am 45."
+"What is your name?", "What should I call you?", "what is your name?", "Who are you?", "Can you tell me your name?",
+"You can call me Edward.", "I am Edward.", "I am Edward the customre of TD."
+"How much money do you want to invest?","What is your investment amount?",
+"$5,000-$20,000","$20,000-$50,000", "$50,000-$100,000", "$100,000 above" 
+"Please select your portfolio combination (stock/mutual fund): ",
+"20/80","40/60", "50/50", "60/40", "80/20" 
+"What stocks do I own?", "how are my shares?", "what companies am I investing in?",
+"You own the following shares: download"
+"what mutual funds do I own?","how are my shares?", "What funds am I investing in?",
+"You own the following funds: download"
+"Show me my whole portfolio","What am I holding totally?", "Whole portfolio",
+"all the product" 
+
