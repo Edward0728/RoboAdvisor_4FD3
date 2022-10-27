@@ -27,7 +27,7 @@ class MutualFundLogicAdapter(LogicAdapter):
       return False
 
   def process(self, input_statement,risk,size,percentile,volatility):
-    data = mutualFund.get_solution(risk,size,percentile,volatility)
+    data = mutualFund.getSolution(risk,size,percentile,volatility)
     print(data)
     selected_statement = Statement(text='getting %s \n ..... %s' %(input_statement.text, data))
     return selected_statement
