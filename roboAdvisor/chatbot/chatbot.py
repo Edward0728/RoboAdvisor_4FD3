@@ -2,6 +2,10 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.conversation import Statement
+import logging
+
+#custom_logger = logging.getLogger(__name__)
+
 
 # Creating ChatBot Instance
 chatbot = ChatBot(
@@ -15,8 +19,9 @@ chatbot = ChatBot(
       'maximum_similarity_threshold': 0.90
     }
   ],
-  database_uri='sqlite:///database.sqlite3'
+  database_uri='sqlite:///database.sqlite3',
   #database_uri='sqlite:///C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/ChatBot/coronabot-chatterbot/database.sqlite3'
+  #logger = custom_logger
 )
 
 # Training With Own Questions 

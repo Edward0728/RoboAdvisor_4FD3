@@ -16,19 +16,16 @@ class MutualFundLogicAdapter(LogicAdapter):
   
   def can_process(self, statement):
     print(statement.text)
-    with open('cx_input.txt', 'a') as output_file:
-      #print(str(row))
-      output_file.write(str(statement)+'\n')
-    if statement.text == 'mutual fund':
+    if statement.text == 'Edward GO':
       return True
-    elif statement.text == 'stock':
+    elif statement.text == 'mutual fund':
       return True
     else:
       return False
 
-  def process(self, input_statement,risk,size,percentile,volatility):
+  def process(self, input_statement,additional_response_selection_parameters=None):
     data = mutualFund.getSolution(risk,size,percentile,volatility)
-    print(data)
+    #print(data)
     selected_statement = Statement(text='getting %s \n ..... %s' %(input_statement.text, data))
     return selected_statement
   

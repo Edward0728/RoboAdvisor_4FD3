@@ -6,11 +6,11 @@ date = '2022-10-25'
 mutualFund_CSV = pd.read_csv (f'C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/Investment_Data/all_funds_all_data_{date}.csv')
 #risk_levels = ['None','Low','Low to Medium','Medium','Medium to High','High']
 
-symbol = 'TDB3491.CF'
-risk = 'low to medium'
-size = 'medium'
-percentile = '30%'
-volatility = '0.2'
+# symbol = 'TDB3491.CF'
+# risk = 'low to medium'
+# size = 'medium'
+# percentile = '30%'
+# volatility = '0.2'
 
 def fundinfo_request(symbol):
     fund = symbol
@@ -44,7 +44,7 @@ def fundvolatility_request(volatility):
 def final_solution(risk_fund,size_fund,rank_fund,volatility_fund):
     solution = []
     for i in risk_fund:
-        print(i)
+        #print(i)
         if i in size_fund and i in rank_fund and i in volatility_fund:
             solution.append(i)
     if len(solution) != 0:
