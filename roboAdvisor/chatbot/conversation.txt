@@ -1,0 +1,2 @@
+stock
+Welcome to the RoboAdvisor. How may I help you?

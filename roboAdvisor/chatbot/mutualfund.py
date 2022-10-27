@@ -26,6 +26,8 @@ class MutualFundLogicAdapter(LogicAdapter):
   def process(self, input_statement,additional_response_selection_parameters=None):
     data = mutualFund.getSolution(risk,size,percentile,volatility)
     #print(data)
-    selected_statement = Statement(text='getting %s \n ..... %s' %(input_statement.text, data))
+    #selected_statement = Statement(text='getting %s \n ...... %s' % (str(data)))
+    selected_statement = Statement(text=str(data))
+    selected_statement.confidence = 0.9
     return selected_statement
   
