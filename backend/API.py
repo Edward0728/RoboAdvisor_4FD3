@@ -48,14 +48,14 @@ class mutualFund():
 
 # Here is an example for stock information
 
-class stock():
-  def get_info(symbol):
-    stock_info = stockinfo_request(symbol)
-    return stock_info
+# class stock():
+#   def get_info(symbol):
+#     stock_info = stockinfo_request(symbol)
+#     return stock_info
 
-  def get_graph(symbol):
-    stock_graph = stockplot_request(symbol)
-    return stock_graph
+#   def get_graph(symbol):
+#     stock_graph = stockplot_request(symbol)
+#     return stock_graph
 
 # print(stock.get_info('AMZN'))
 # stock.get_graph('AMZN')
