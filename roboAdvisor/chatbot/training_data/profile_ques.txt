@@ -1,22 +1,24 @@
-"Hello",
-"Hello! Welcome to RoboAdvisor. Let us get started.",
-"OK."
-"What is your name,please?", 
-"You can call me Edward."
-"what is your age,please?", 
-"I am 21 years old."
-"How much money do you want to invest?"
-"$5,000-$20,000"
-"What risk level can you take?"
-"Low to Medium"
-"What fund size do you like?"
-"Medium"
-"What fund percentile do you like?"
-"30%"
-"What volatility can you take?"
-"0.2"
-"Here is the recommended fund list."
-"Thank you."
-"You are welcome. Goodbye"
-"Goodbye."
+Can you give me some investment suggestioins?
+No worries. Let us get started.
+Please recommended some mutual funds to me.
+No worries. Let us get started.
+Sounds great.
+What is your name, please? 
+You can call me Edward.
+what is your age, please? 
+I am 21 years old.
+How much money do you want to invest?
+$5000-$20000
+What risk level can you take?
+Low to Medium
+What fund size do you like?
+I want some medium size funds.
+What fund percentile do you like?
+I want top 30% funds.
+What volatility can you take?
+I can take up to 0.2 volatility.
+Here is the recommended fund list.
+Thank you.
+You are welcome. Goodbye.
+
 
