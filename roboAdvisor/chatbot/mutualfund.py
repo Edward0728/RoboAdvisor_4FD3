@@ -12,6 +12,9 @@ class MutualFundLogicAdapter(LogicAdapter):
   
   def can_process(self, statement):
     print(statement.text)
+    with open('cx_input.txt', 'a') as output_file:
+      #print(str(row))
+      output_file.write(str(statement)+'\n')
     if statement.text == 'mutual fund':
       return True
     elif statement.text == 'stock':

@@ -16,7 +16,7 @@ cursor.execute(query)
 result=cursor.fetchall()
 #view results
 
-with open('Cx_Input.txt', 'w') as output_file:
+with open('database.txt', 'w') as output_file:
     for row in result:
         #print(str(row))
         output_file.write(str(row)+'\n')
