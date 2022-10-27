@@ -1,6 +1,6 @@
 from chatterbot.logic import LogicAdapter
 from chatterbot.conversation import Statement
-
+import json
 import sys
 sys.path.append("../..")
 from backend.API import mutualFund
@@ -24,10 +24,17 @@ class MutualFundLogicAdapter(LogicAdapter):
       return False
 
   def process(self, input_statement,additional_response_selection_parameters=None):
-    data = mutualFund.getSolution(risk,size,percentile,volatility)
+    #data = mutualFund.getSolution(risk,size,percentile,volatility)
+    data = mutualFund.getRisk(risk)
+    # funds = ""
+    # funds = funds.join(data)
+    print(data)
+    #funds = json.dumps(data)
+    print(type(input_statement.text))
+    print(type(data))
     #print(data)
-    #selected_statement = Statement(text='getting %s \n ...... %s' % (str(data)))
-    selected_statement = Statement(text=str(data))
-    selected_statement.confidence = 0.9
+    #selected_statement = Statement(text=data)
+    selected_statement = Statement(text='getting %s ' %(data))
+    #selected_statement.confidence = 0.9
     return selected_statement
   
