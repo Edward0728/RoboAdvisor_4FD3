@@ -15,18 +15,18 @@ chatbot = ChatBot(
       'maximum_similarity_threshold': 0.90
     }
   ]
-  #database_uri='sqlite:///database.sqlite3'
+  database_uri='sqlite:///database.sqlite3'
   #database_uri='sqlite:///C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/ChatBot/coronabot-chatterbot/database.sqlite3'
 )
 
 # Training With Own Questions 
-trainer = ListTrainer(chatbot)
 
 training_data_quesans = open('./training_data/profile_ques.txt').read().splitlines()
 training_data_personal = open('./training_data/recommendation_chat.txt').read().splitlines()
 
 training_data = training_data_quesans + training_data_personal
 
+trainer = ListTrainer(chatbot)
 trainer.train(training_data)
 
 
@@ -53,7 +53,7 @@ trainer.train(training_data)
 # trainer = ListTrainer(chatbot)
 # trainer.train(conversation)
 
-# # Training with English Corpus Data 
+# Training with English Corpus Data 
 # trainer_corpus = ChatterBotCorpusTrainer(chatbot)
 # trainer_corpus.train(
 #     'chatterbot.corpus.english'
