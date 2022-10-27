@@ -1,9 +1,14 @@
 import json
 import pandas as pd
+import os
+dirname = os.path.dirname(__file__)
 # Change the CSV file address to your CSV file path
 #mutualFund_CSV = pd.read_csv (r'/Users/qinyang/PycharmProjects/RoboAdvisor/Investment_Data/all_funds_data.csv')
 date = '2022-10-25'
-mutualFund_CSV = pd.read_csv (f'C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/Investment_Data/all_funds_all_data_{date}.csv')
+
+allFundName = os.path.join(dirname, '../Investment_Data/all_funds_all_data_{}.csv'.format(date))
+
+mutualFund_CSV = pd.read_csv (allFundName)
 #risk_levels = ['None','Low','Low to Medium','Medium','Medium to High','High']
 
 # symbol = 'TDB3491.CF'
