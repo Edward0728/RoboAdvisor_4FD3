@@ -1,22 +1,32 @@
 Can you give me some investment suggestioins?
-No worries. Let us get started.
+Sure. Let us get started.
 Please recommended some mutual funds to me.
-No worries. Let us get started.
+Sure. Let us get started.
 Sounds great.
-What is your name, please? 
+What is your name? (Please answer in complete sentence. Same as below.) 
 You can call me Edward.
+What is your name? (Please answer in complete sentence. Same as below.) 
+My name is Edward.
 what is your age, please? 
 I am 21 years old.
 How much money do you want to invest?
-$5000-$20000
-What risk level can you take?
-Low to Medium
-What fund size do you like?
+I want to invest $5000-$20000.
+What risk level can you take? (low, low to medium, medium, high to medium, high)
+I can take low to medium risk.
+What fund size do you like? (small, medium, large)
 I want some medium size funds.
-What fund percentile do you like?
+What fund percentile do you like? (10%, 15%, 30%)
 I want top 30% funds.
-What volatility can you take?
+What fund percentile do you like? (10%, 15%, 30%)
+I want 10% funds.
+What fund percentile do you like? (10%, 15%, 30%)
+I want 10 percentile funds.
+What volatility can you take? (numeric value e.g. 0.2)
 I can take up to 0.2 volatility.
+What volatility can you take? (numeric value e.g. 0.2)
+I can take 0.15 volatility.
+I get some funds ready for you. Please enter your name and GO to get the recommended funds list.
+Edward Go!
 Here is the recommended fund list.
 Thank you.
 You are welcome. Goodbye.
