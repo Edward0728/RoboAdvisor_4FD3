@@ -57,7 +57,7 @@ size_fund = fundsize_request(size)
 rank_fund = fundrank_request(percentile)
 volatility_fund = fundvolatility_request(volatility)
 
-print('risk', risk_fund, end = '\n')
+#print('risk', risk_fund, end = '\n')
 # print('size', size_fund, end = '\n')
 # print('rank', rank_fund, end = '\n')
 # print('vola', volatility_fund,end = '\n')
