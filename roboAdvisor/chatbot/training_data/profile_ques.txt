@@ -11,7 +11,7 @@ what is your age, please?
 I am 21 years old.
 How much money do you want to invest?
 I want to invest $5000-$20000.
-What risk level can you take? (low, low to medium, medium, high to medium, high)
+What risk level can you take? (low, low to medium, medium, medium to high , high)
 I can take low to medium risk.
 What fund size do you like? (small, medium, large)
 I want some medium size funds.

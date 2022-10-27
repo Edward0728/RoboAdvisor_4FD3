@@ -4,7 +4,11 @@ from chatterbot.conversation import Statement
 import sys
 sys.path.append("../..")
 from backend.API import mutualFund
-
+symbol = 'TDB3491.CF'
+risk = 'low to medium'
+size = 'medium'
+percentile = '30%'
+volatility = '0.2'
 
 class MutualFundLogicAdapter(LogicAdapter):
   def __init__(self, chatbot, **kwargs):
