@@ -20,7 +20,7 @@ def home():
 def get_bot_response():
     userText = request.args.get('msg')
     input_statement = Statement(text=userText)
-    response= str(chatbot.generate_response(input_statement))
+    response = str(chatbot.generate_response(input_statement))
     with open('conversation.txt', 'a') as output_file:
       #print(str(row))
       output_file.write(str(input_statement)+'\n')
