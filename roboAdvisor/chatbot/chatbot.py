@@ -17,6 +17,11 @@ chatbot = ChatBot(
       'import_path': 'mutualfund.MutualFundLogicAdapter',
       'default_response': 'I am sorry, but I do not understand. I am still learning.',
       'maximum_similarity_threshold': 0.90
+    },
+    {
+      'import_path': 'mutualfund.StockLogicAdapter',
+      'default_response': 'I am sorry, but I do not understand. I am still learning.',
+      'maximum_similarity_threshold': 0.90
     }
   ],
   database_uri='sqlite:///database.sqlite3',
