@@ -1,6 +1,6 @@
 # This is to build an interface between front end and back end
-#from .StockData import stockinfo_request
-#from .StockPlot import stockplot_request
+from .StockData import stockinfo_request
+from .StockPlot import stockplot_request
 from .Fund_Selector import *
 #from .CSV_retriver import fundlist_request
 
@@ -46,19 +46,19 @@ class mutualFund():
 # print(mutualFund.getRisk('Low'))
 
 
-# Here is an example for stock information
+#Here is an example for stock information
 
-# class stock():
-#   def get_info(symbol):
-#     stock_info = stockinfo_request(symbol)
-#     return stock_info
+class stock():
+  def get_info(symbol):
+    stock_info = stockinfo_request(symbol)
+    return stock_info
 
-#   def get_graph(symbol):
-#     stock_graph = stockplot_request(symbol)
-#     return stock_graph
+  def get_graph(symbol):
+    stock_graph = stockplot_request(symbol)
+    return stock_graph
 
-# print(stock.get_info('AMZN'))
-# stock.get_graph('AMZN')
+#print(stock.get_info('AMZN'))
+#stock.get_graph('AMZN')
 
 # stock = 'TLSA'
 # stock = 'AAPL'

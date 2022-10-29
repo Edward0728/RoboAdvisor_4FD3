@@ -28,28 +28,28 @@ def fundinfo_request(symbol):
 
 def riskfund_request(risk):
     fund_list = mutualFund_CSV.loc[mutualFund_CSV['Risk'] == risk, 'Symbol'].tolist()
-    data = json.dumps(fund_list)
-    #return fund_list
-    return data
+    #data = json.dumps(fund_list)
+    return fund_list
+    #return data
 
 def fundsize_request(size):
     fund_list = mutualFund_CSV.loc[mutualFund_CSV['Size'] == size, 'Symbol'].tolist()
-    data = json.dumps(fund_list)
-    #return fund_list
-    return data
+    #data = json.dumps(fund_list)
+    return fund_list
+    #return data
 
 def fundrank_request(percentile):
     fund_list = mutualFund_CSV.loc[mutualFund_CSV['Percentile'] == percentile, 'Symbol'].tolist()
-    data = json.dumps(fund_list)
-    #return fund_list
-    return data
+    #data = json.dumps(fund_list)
+    return fund_list
+    #return data
 
 def fundvolatility_request(volatility):
     mutualFund_CSV['Volatility'] = pd.to_numeric(mutualFund_CSV['Volatility'])
     fund_list = mutualFund_CSV.loc[mutualFund_CSV['Volatility'] <= float(volatility), 'Symbol'].tolist()
-    data = json.dumps(fund_list)
-    #return fund_list
-    return data
+    #data = json.dumps(fund_list)
+    return fund_list
+    #return data
 
 def final_solution(risk_fund,size_fund,rank_fund,volatility_fund):
     solution = []

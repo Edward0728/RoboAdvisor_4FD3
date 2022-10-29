@@ -14,7 +14,12 @@ chatbot = ChatBot(
   logic_adapters=[
     'chatterbot.logic.BestMatch',
     {
-      'import_path': 'mutualfund.MutualFundLogicAdapter',
+      'import_path': 'product_logicadapter.MutualFundLogicAdapter',
+      'default_response': 'I am sorry, but I do not understand. I am still learning.',
+      'maximum_similarity_threshold': 0.90
+    },
+    {
+      'import_path': 'product_logicadapter.StockLogicAdapter',
       'default_response': 'I am sorry, but I do not understand. I am still learning.',
       'maximum_similarity_threshold': 0.90
     }
