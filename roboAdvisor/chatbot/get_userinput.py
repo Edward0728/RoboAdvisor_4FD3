@@ -1,9 +1,10 @@
 #from apps import dt
 import re
+from  apps import file_index
 
-dt='10282022160847'
+#dt='10282022160847'
 # conversation = open(f'roboAdvisor/chatbot/{dt}.txt', 'r')
-conversation = open(f'roboAdvisor/chatbot/{dt}.txt', 'r')
+conversation = open(f'roboAdvisor/chatbot/{file_index}.txt', 'r')
 lines = conversation.readlines() 
 for line in lines:
     #print(line)
@@ -18,7 +19,7 @@ for line in lines:
 
         if re.findall(".*invest.*",line,re.MULTILINE):
             amount = re.findall("\d+.*",line,re.MULTILINE)
-            print(amount[0])
+            print(amount)
             
         if re.findall(".*risk.*",line,re.MULTILINE):
             risk = line[line.index('take')+5:line.index('risk')]

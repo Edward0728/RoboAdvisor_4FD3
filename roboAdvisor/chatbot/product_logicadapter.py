@@ -1,15 +1,17 @@
 from chatterbot.logic import LogicAdapter
 from chatterbot.conversation import Statement
-import json
+#import json
 import sys
+from get_userinput import risk, size, percentile, volatility
+
 sys.path.append("../..")
 from backend.API import mutualFund
 from backend.API import stock
-symbol = 'TDB3491.CF'
-risk = 'low to medium'
-size = 'medium'
-percentile = '30%'
-volatility = '0.2'
+# symbol = 'TDB3491.CF'
+# risk = 'low to medium'
+# size = 'medium'
+# percentile = '30%'
+# volatility = '0.2'
 
 class StockLogicAdapter(LogicAdapter):
   def __init__(self, chatbot, **kwargs):

@@ -12,6 +12,7 @@ def dt_name():
     return dt_obj.strftime("%m%d%Y%H%M%S")
 
 dt = dt_name()
+file_index = dt
 
 class ChatbotConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
@@ -30,7 +31,7 @@ def get_bot_response():
     userText = request.args.get('msg')
     input_statement = Statement(text=userText)
     response = str(chatbot.generate_response(input_statement))
-    with open(f'{dt}.txt', 'a') as output_file:
+    with open(f'{file_index}.txt', 'a') as output_file:
       #print(str(row))
       output_file.write(str(input_statement)+'\n')
       output_file.write(response+'\n')
