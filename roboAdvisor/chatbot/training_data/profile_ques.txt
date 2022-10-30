@@ -8,7 +8,7 @@ May I ask for your age, please?
 I am 21 years old.
 How much money do you want to invest this time, please?
 I want to invest 5000-20000.
-What fund size do you prefer, please? (small, medium, large)
+What fund size do you prefer at this time, please? (small, medium, large)
 I want some medium size funds.
 What fund percentile do you like, please? (top 10%, 15%, 30%)
 I want top 30% funds.
@@ -16,8 +16,8 @@ What fund volatility can you take, please? (e.g.up to 10%)
 I can take up to 20% volatility.
 What fund risk level do you plan to take with, please? (low, low to medium, medium, medium to high , high)
 I can take low to medium risk.
-Please enter your name and GO. Then click the Mutual Fund button to get the recommended fund list.
-Edward Go!
+All done! Reply with 'Go Fund Go' to get your recommended fund list.
+
 
 
 

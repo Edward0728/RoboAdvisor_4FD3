@@ -35,7 +35,7 @@ class MutualFundLogicAdapter(LogicAdapter):
   
   def can_process(self, statement):
     print(statement.text)
-    if statement.text == 'mutual fund':
+    if statement.text == 'Go Fund Go':
       return True
     # elif statement.text == 'Edward GO':
     #   return True
@@ -48,7 +48,7 @@ class MutualFundLogicAdapter(LogicAdapter):
     lines = conversation.readlines() 
     Risk, Size, Percentile, Vola = parse_chat(lines)
     #funds = ", "
-    if input_statement.text == 'mutual fund': #or 'Edward GO':
+    if input_statement.text == 'Go Fund Go': #or 'Edward GO':
       data = mutualFund.getSolution(Risk,Size,Percentile,Vola)
       funds = ", "
       funds = funds.join(data)
