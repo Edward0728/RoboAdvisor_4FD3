@@ -12,8 +12,8 @@ import re
 # with open(f'./conversations/chat.txt', 'w') as output_file:
 #     pass
 
-conversation = open(f'./conversations/chat.txt', 'r')
-lines = conversation.readlines() 
+# conversation = open(f'./conversations/chat.txt', 'r')
+# lines = conversation.readlines() 
 
 def parse_chat(lines):
     Cx_Name = ''
@@ -65,11 +65,17 @@ def parse_chat(lines):
                 print(percentile)
 
             if re.findall(".*volatility.*",line):  
-                volatility = line[line.index('volatility')-4:line.index('volatility')-1]
-                Volatility = float(volatility.strip('%')) / 100.0
-                print(type(Volatility))
+                #volatility = line[line.index('volatility')-4:line.index('volatility')-1]
+                volatility = line[line.index('take up to')+11:line.index('take up to')+13]
+                Volatility = float(volatility) / 100.0
+                print('Volatility', type(Volatility))
+    with open('./conversations/parameters.txt','w') as p:
+        p.write(Risk+'\n')
+        p.write(Size+'\n')
+        p.write(Percentile+'\n')
+        p.write(str(Volatility)+'\n')   
     #return risk_list[0], size_list[0], percentile_list[0], volatility_list[0]
     return Risk, Size, Percentile, Volatility
     #print(size)
-Risk, Size, Percentile, Volatility = parse_chat(lines)
-print(Volatility)
+
+  

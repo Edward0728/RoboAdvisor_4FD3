@@ -66,13 +66,17 @@ def parse_chat(lines):
                 print(percentile)
 
             if re.findall(".*volatility.*",line):  
-                volatility = line[line.index('volatility')-4:line.index('volatility')-1]
-                Volatility = float(volatility.strip('%')) / 100.0
+                #volatility = line[line.index('volatility')-4:line.index('volatility')-1]
+                volatility = line[line.index('take up to')+11:line.index('take up to')+13]
+                print(volatility)
+                print(type(volatility))
+                Volatility = float(volatility) / 100.0
                 print(type(Volatility))
                 print(Volatility)
     #return risk_list[0], size_list[0], percentile_list[0], volatility_list[0]
     return Risk, Size, Percentile, Volatility
     #print(size)
 Risk, Size, Percentile, Volatility = parse_chat(lines)
-print(Risk, Size, Percentile, Volatility)
+print(Volatility)
+print(type(Volatility))
 

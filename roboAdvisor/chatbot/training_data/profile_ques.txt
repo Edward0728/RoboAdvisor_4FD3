@@ -1,24 +1,22 @@
 Welcome to the RoboAdvisor. How may I help you today?
 Can you give me some investment suggestioins?
 Sure. Let us get started.
-Please recommended some mutual funds to me.
-Sure. Let us get started.
 Sounds great.
-What is your name, please? (Please answer in complete sentence. Same as below.) 
+Can I have your name, please? (Please answer in complete sentence. Same as below.) 
 My name is Edward.
-what is your age, please? 
+May I ask for your age, please? 
 I am 21 years old.
-How much money do you want to invest, please?
-I want to invest $5000-$20000.
-What risk level can you take, please? (low, low to medium, medium, medium to high , high)
-I can take low to medium risk.
-What fund size do you like, please? (small, medium, large)
+How much money do you want to invest this time, please?
+I want to invest 5000-20000.
+What fund size do you prefer, please? (small, medium, large)
 I want some medium size funds.
 What fund percentile do you like, please? (top 10%, 15%, 30%)
 I want top 30% funds.
-What volatility can you take, please? (numeric value e.g. up to 20%)
+What fund volatility can you take, please? (e.g.up to 10%)
 I can take up to 20% volatility.
-I get some funds ready for you. Please enter your name and GO to get the recommended funds list.
+What fund risk level do you plan to take with, please? (low, low to medium, medium, medium to high , high)
+I can take low to medium risk.
+Please enter your name and GO. Then click the Mutual Fund button to get the recommended fund list.
 Edward Go!
 
 
