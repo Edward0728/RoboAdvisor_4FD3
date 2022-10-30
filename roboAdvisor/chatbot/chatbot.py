@@ -10,21 +10,21 @@ from chatterbot.conversation import Statement
 # Creating ChatBot Instance
 chatbot = ChatBot(
   'RoboBot',
-  storage_adapter='chatterbot.storage.SQLStorageAdapter',
+  #storage_adapter='chatterbot.storage.SQLStorageAdapter',
   logic_adapters=[
     'chatterbot.logic.BestMatch',
     {
       'import_path': 'product_logicadapter.MutualFundLogicAdapter',
       'default_response': 'I am sorry, but I do not understand. I am still learning.',
       'maximum_similarity_threshold': 0.90
-    },
-    {
-      'import_path': 'product_logicadapter.StockLogicAdapter',
-      'default_response': 'I am sorry, but I do not understand. I am still learning.',
-      'maximum_similarity_threshold': 0.90
     }
+    # {
+    #   'import_path': 'product_logicadapter.StockLogicAdapter',
+    #   'default_response': 'I am sorry, but I do not understand. I am still learning.',
+    #   'maximum_similarity_threshold': 0.90
+    # }
   ],
-  database_uri='sqlite:///database.sqlite3',
+  #database_uri='sqlite:///database.sqlite3',
   #database_uri='sqlite:///C:/Users/forfu/source/repos/Edward0728/RoboAdvisor_4FD3/ChatBot/coronabot-chatterbot/database.sqlite3'
   #logger = custom_logger
 )
