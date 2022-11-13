@@ -8,7 +8,7 @@ from .Fund_Selector import *
 class mutualFund():
 
 # should return the information of looking symbol
-  def get(symbol):
+  def get_fund_info(symbol):
     fund_information = fundinfo_request(symbol)
     return fund_information
 
@@ -49,7 +49,7 @@ class mutualFund():
 #Here is an example for stock information
 
 class stock():
-  def get_info(symbol):
+  def get_stock_info(symbol):
     stock_info = stockinfo_request(symbol)
     return stock_info
 
