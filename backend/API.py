@@ -2,6 +2,7 @@
 from .StockData import stockinfo_request
 from .StockPlot import stockplot_request
 from .Fund_Selector import *
+from .Stock_Selector import *
 #from .CSV_retriver import fundlist_request
 
 
@@ -32,23 +33,10 @@ class mutualFund():
   def getSolution(risk,size,percentile,volatility):
     fund_list = final_solution(riskfund_request(risk),fundsize_request(size),fundrank_request(percentile),fundvolatility_request(volatility))
     return fund_list
-  
-
-# print(mutualFund.get('RBF460.CF'))
-# print(mutualFund.getRisk('Low'))
-
-
-# How the frond end consumes the functions, e.g.
-# import mutualFund
-# mutualFund.get('RBF460.CF')
-# mutualFund.getRisk('Low')
-# print(mutualFund.get('RBF460.CF'))
-# print(mutualFund.getRisk('Low'))
-
 
 #Here is an example for stock information
 
-class stock():
+class Stock():
   def get_stock_info(symbol):
     stock_info = stockinfo_request(symbol)
     return stock_info
@@ -57,6 +45,24 @@ class stock():
     stock_graph = stockplot_request(symbol)
     return stock_graph
 
+# should return the list of mutual funds that fall in the looking risk level
+  def getRating(rating):
+    stock_list = ratingstock_request(rating)
+    return stock_list
+
+  def getPercentile(percentile):
+    stock_list = stockrank_request(percentile)
+    return stock_list
+  
+  def getVolatity(volatility):
+    stock_list = stockvolatility_request(volatility)
+    return stock_list
+
+  def getSolution(rating):
+  #def getSolution(rating,size,percentile,volatility):
+    #stock_list = final_solution(ratingstock_request(rating),stockrank_request(percentile),stockvolatility_request(volatility))
+    stock_list = final_solution(ratingstock_request(rating))
+    return stock_list
 #print(stock.get_info('AMZN'))
 #stock.get_graph('AMZN')
 
