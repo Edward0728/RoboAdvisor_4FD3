@@ -11,7 +11,7 @@ from userinput import parse_chat
 import sys
 sys.path.append("../..")
 from backend.API import mutualFund
-from backend.API import stock
+from backend.API import Stock
 # symbol = 'TDB3491.CF'
 # risk = 'low to medium'
 # size = 'medium'
@@ -35,7 +35,7 @@ class MutualFundLogicAdapter(LogicAdapter):
   
   def can_process(self, statement):
     print(statement.text)
-    if statement.text == 'Go Fund Go':
+    if statement.text == 'Go Money Go':
       return True
     # elif statement.text == 'Edward GO':
     #   return True
@@ -46,20 +46,19 @@ class MutualFundLogicAdapter(LogicAdapter):
     #data = mutualFund.getSolution(risk,size,percentile,volatility)
     conversation = open(f'./conversations/chat.txt', 'r')
     lines = conversation.readlines() 
-    Risk, Size, Percentile, Vola = parse_chat(lines)
+    Risk, Size, Percentile, Vola, Rating= parse_chat(lines)
     #funds = ", "
-    if input_statement.text == 'Go Fund Go': #or 'Edward GO':
-      data = mutualFund.getSolution(Risk,Size,Percentile,Vola)
+    if input_statement.text == 'Go Money Go': #or 'Edward GO':
+      fund_data = mutualFund.getSolution(Risk,Size,Percentile,Vola)
+      stock_data = Stock.getSolution(Rating)
       funds = ", "
-      funds = funds.join(data)
+      funds = funds.join(fund_data)
+      stocks = ","
+      stocks = stocks.join(stock_data)
       print(funds)
       open('./conversations/chat.txt', 'w').close()
-    #funds = json.dumps(data)
-    # print(type(input_statement.text))
-    # print(type(data))
-    #print(data)
-    #selected_statement = Statement(text=data)
-    selected_statement = Statement(text='getting {} <br > {}'.format(input_statement, funds))
+
+    selected_statement = Statement(text='getting {} <br > Funds: {} <br > Stocks: {}'.format(input_statement, funds,stocks))
     selected_statement.confidence = 0.9
     return selected_statement
   
@@ -70,10 +69,10 @@ class MutualFundLogicAdapter(LogicAdapter):
   
 #   def can_process(self, statement):
 #     print(statement.text)
-#     if statement.text == 'stock':
+#     if statement.text == 'Go Money Go':
 #       return True
-#     elif statement.text == 'Edward GO':
-#       return True
+#     # elif statement.text == 'Edward GO':
+#     #   return True
 #     else:
 #       return False
 

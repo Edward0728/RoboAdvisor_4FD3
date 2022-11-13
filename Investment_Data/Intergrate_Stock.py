@@ -120,11 +120,11 @@ all_df = pd.concat([both_df,rating_df], axis = 1)
 #create percentile column
 percentile_list = []
 for i in range(100):
-    if i <=10:
+    if i <10:
         percentile_list.append('10%')
-    elif i > 10 and i <= 15:
+    elif i >= 10 and i < 15:
         percentile_list.append('15%')
-    elif i > 15 and i <= 30:
+    elif i >= 15 and i < 30:
         percentile_list.append('30%')
     else:
         percentile_list.append('None')

@@ -119,11 +119,11 @@ all_df['Size']= size_list
 #create percentile column
 percentile_list = []
 for i in range(200):
-    if i <=20:
+    if i <20:
         percentile_list.append('10%')
-    elif i > 20 and i <= 30:
+    elif i >= 20 and i < 30:
         percentile_list.append('15%')
-    elif i > 30 and i <= 60:
+    elif i >= 30 and i < 60:
         percentile_list.append('30%')
     else:
         percentile_list.append('None')
