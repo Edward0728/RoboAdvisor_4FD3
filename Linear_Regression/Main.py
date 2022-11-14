@@ -1,6 +1,3 @@
-# Qin Yang 400420584
-# Midterm Q2
-
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
