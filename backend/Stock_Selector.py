@@ -29,7 +29,8 @@ def stockinfo_request(symbol):
 def ratingstock_request(rating):
     print('get rating as: ', rating)
     print(type(rating))
-    stock_list = Stock_CSV.loc[Stock_CSV['Rating'] >= rating.strip(), 'Symbol'].tolist()
+    Stock_CSV['Rating'] = pd.to_numeric(Stock_CSV['Rating'])
+    stock_list = Stock_CSV.loc[Stock_CSV['Rating'] >= float(rating.strip()), 'Symbol'].tolist()
     #data = json.dumps(stock_list)
     return stock_list
     #return data
@@ -53,7 +54,7 @@ def stockvolatility_request(volatility):
     return stock_list
     #return data
 
-def final_solution(rating_stock):
+def stock_solution(rating_stock):
 #def final_solution(rating_stock,size_stock,rank_stock,volatility_stock):
     solution = []
     for i in rating_stock:

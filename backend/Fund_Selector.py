@@ -61,7 +61,7 @@ def fundvolatility_request(volatility):
     return fund_list
     #return data
 
-def final_solution(risk_fund,size_fund,rank_fund,volatility_fund):
+def fund_solution(risk_fund,size_fund,rank_fund,volatility_fund):
     solution = []
     for i in risk_fund:
         #print(i)

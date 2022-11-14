@@ -31,7 +31,7 @@ class mutualFund():
     return fund_list
 
   def getSolution(risk,size,percentile,volatility):
-    fund_list = final_solution(riskfund_request(risk),fundsize_request(size),fundrank_request(percentile),fundvolatility_request(volatility))
+    fund_list = fund_solution(riskfund_request(risk),fundsize_request(size),fundrank_request(percentile),fundvolatility_request(volatility))
     return fund_list
 
 #Here is an example for stock information
@@ -61,7 +61,7 @@ class Stock():
   def getSolution(rating):
   #def getSolution(rating,size,percentile,volatility):
     #stock_list = final_solution(ratingstock_request(rating),stockrank_request(percentile),stockvolatility_request(volatility))
-    stock_list = final_solution(ratingstock_request(rating))
+    stock_list = stock_solution(ratingstock_request(rating))
     return stock_list
 #print(stock.get_info('AMZN'))
 #stock.get_graph('AMZN')

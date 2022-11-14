@@ -53,12 +53,12 @@ class MutualFundLogicAdapter(LogicAdapter):
       stock_data = Stock.getSolution(Rating)
       funds = ", "
       funds = funds.join(fund_data)
-      stocks = ","
+      stocks = "/ "
       stocks = stocks.join(stock_data)
       print(funds)
       open('./conversations/chat.txt', 'w').close()
 
-    selected_statement = Statement(text='getting {} <br > Funds: {} <br > Stocks: {}'.format(input_statement, funds,stocks))
+    selected_statement = Statement(text='************{}************ <br > Funds: {} <br > Stocks: {}'.format(input_statement, funds,stocks))
     selected_statement.confidence = 0.9
     return selected_statement
   
