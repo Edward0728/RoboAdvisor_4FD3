@@ -53,7 +53,7 @@ class MutualFundLogicAdapter(LogicAdapter):
       stock_data = Stock.getSolution(Rating)
       funds = ", "
       funds = funds.join(fund_data)
-      stocks = "/ "
+      stocks = ", "
       stocks = stocks.join(stock_data)
       print(funds)
       open('./conversations/chat.txt', 'w').close()

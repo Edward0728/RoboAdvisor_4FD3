@@ -5,7 +5,7 @@
 
 import requests
 
-url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=AEGJDU540F597MXQ'
+url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=TOU-T&interval=5min&apikey=MFCI9CTBFDHTPF7Y'
 r = requests.get(url)
 data = r.json()
 
