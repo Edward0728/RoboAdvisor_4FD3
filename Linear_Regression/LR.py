@@ -1,6 +1,3 @@
-# Qin Yang 400420584
-# Midterm Q2
-
 import math
 import pandas as pd
 import numpy as np
