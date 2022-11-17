@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Main Page" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f13cc26b40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Robo-Advisor</title>
+  </head>
+  <body>
+    <section class="sub__header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav__links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="robo_adviser.html">ROBO ADVISOR</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Robo-Advisor</h1>
+    </section>
+
+    <!--  ETFs   -->
+    <section class="etfs">
+      <h1>ETFs of the optiopn</h1>
+      <p>
+        As you pay your mortgage, the amount increases, and the portion you put
+        toward interest decreases. Interest: Interest essentially acts as a fee
+        for taking on the risk of loaning you money. Your interest rate, which
+        is a percentage of your mortgage amount, directly impacts how much you
+        pay in total.
+      </p>
+
+      <div class="row">
+        <div class="etfs__col">
+          <img src="images/london.png" />
+          <div class="layer">
+            <h3>SP500</h3>
+          </div>
+        </div>
+
+        <div class="etfs__col">
+          <img src="images/newyork.png" />
+          <div class="layer">
+            <h3>DOW</h3>
+          </div>
+        </div>
+
+        <div class="etfs__col">
+          <img src="images/washington.png" />
+          <div class="layer">
+            <h3>NASDAQ</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Footer   -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Robo-advisors</p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Abubakir</p>
+    </section>
+
+    <!--  JavaScript for Toggle Menu    -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
