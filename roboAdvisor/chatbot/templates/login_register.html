@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Login and Registion form</title>
-    <link rel="stylesheet" href="styles_login.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles_login.css') }}" />
   </head>
   <body>
     <div class="hero">
@@ -16,9 +16,9 @@
           </button>
         </div>
         <div class="icons">
-          <img src="images/fb.png" />
-          <img src="images/tw.png" />
-          <img src="images/gp.png" />
+          <img src="{{ url_for('static', filename='images/fb.png') }}" />
+          <img src="{{ url_for('static', filename='images/tw.png') }}" />
+          <img src="{{ url_for('static', filename='images/gp.png') }}" />
         </div>
 
         <form id="login" class="input__group">

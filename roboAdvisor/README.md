@@ -15,4 +15,4 @@ Change your directory to `RoboAdvisor_4FD3/roboAdvisor/chatbot`.
 ```
 python3 apps.py 
 ```
-The Flask server should be running on http://127.0.0.1:5000
+The Flask server should be running on http://127.0.0.1:5000. And the bot can be accessed at http://127.0.0.1:5000/bot.
