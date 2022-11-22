@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="Main Page" />
     <meta name="viewport" content="with=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}" />
     <script
       src="https://kit.fontawesome.com/f13cc26b40.js"
       crossorigin="anonymous"
@@ -14,14 +14,14 @@
   <body>
     <section class="sub__header">
       <nav>
-        <a href="index.html"><img src="images/logo.png" /></a>
+        <a href="."><img src="{{ url_for('static', filename='images/logo.png') }}" /></a>
         <div class="nav__links" id="navLinks">
           <i class="fa-solid fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="robo_adviser.html">ROBO ADVISOR</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href=".">HOME</a></li>
+            <li><a href="./about">ABOUT</a></li>
+            <li><a href="./bot">ROBO ADVISOR</a></li>
+            <li><a href="./contact">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -42,7 +42,7 @@
           </p>
           <a href="#" class="button__action btn">EXPLORE NOW</a>
         </div>
-        <div class="about__us__col"><img src="images/about.jpg" /></div>
+        <div class="about__us__col"><img src="{{ url_for('static', filename='images/about.jpg') }}" /></div>
       </div>
     </section>
 
