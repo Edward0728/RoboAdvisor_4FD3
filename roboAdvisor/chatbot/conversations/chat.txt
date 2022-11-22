@@ -1,2 +1,2 @@
 Go Money Go
-getting Go Money Go <br > Funds: TDB117.CF, PHN9060.CF, RBF167.CF <br > Stocks: TOU-T/ ERF-T/ CVE-T/ OVV-T/ CPG-T/ ARX-T/ PEY-T/ WCP-T/ EFN-T/ YRI-T/ ATD-T/ FFH-T/ CCO-T/ WCN-T/ NPI-T/ LAC-T/ KEY-T/ TFII-T/ AEM-T/ WPM-T/ STN-T/ ATA-T/ GFL-T
+************Go Money Go************ <br > Funds: no, fund, found <br > Stocks: YRI-T, WSP-T, WPM-T, WCP-T, WCN-T, TVE-T, TRI-T, TOU-T, TFII-T, TECK-B-T

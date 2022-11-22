@@ -18,7 +18,7 @@ What fund risk level do you plan to take with, please? (low, low to medium, medi
 I can take low to medium risk.
 What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)
 I want stocks having ratings at least 4.1.
-All done! Reply with 'Go Money Go' to get your recommended fund and stock list.
+All done! Reply with 'Go Money Go' and wait a second to get your customized recommendations.
 
 
 

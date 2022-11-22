@@ -1,14 +1,16 @@
 import json
 import pandas as pd
 import os
+from .Stock_Prediction import *
+
 dirname = os.path.dirname(__file__)
 # Change the CSV file address to your CSV file path
 #mutualStock_CSV = pd.read_csv (r'/Users/qinyang/PycharmProjects/RoboAdvisor/Investment_Data/all_stocks_data.csv')
 date = '2022-11-12'
 
 allStockName = os.path.join(dirname, '../Investment_Data/stocks_{}.csv'.format(date))
-
 Stock_CSV = pd.read_csv (allStockName)
+n_future = 60
 #rating_levels = ['None','Low','Low to Medium','Medium','Medium to High','High']
 
 # symbol = 'TDB3491.CF'
@@ -16,6 +18,8 @@ Stock_CSV = pd.read_csv (allStockName)
 # size = 'medium'
 # percentile = '30%'
 # volatility = '0.2'
+
+#rating = 4.5
 
 def stockinfo_request(symbol):
     stock = symbol
@@ -57,10 +61,15 @@ def stockvolatility_request(volatility):
 def stock_solution(rating_stock):
 #def final_solution(rating_stock,size_stock,rank_stock,volatility_stock):
     solution = []
+    print(rating_stock)
     for i in rating_stock:
+        stock_ticker = i[:-2]+'.TO'
+        print(stock_ticker)
+        multi_step_forecasts(stock_ticker.strip(),0, n_future)
         solution.append(i)
+        solution.sort(reverse=True)
     if len(solution) != 0:
-        return solution
+        return solution[0:10]
     else:
         return(['no', 'stock', 'found'])    
 
