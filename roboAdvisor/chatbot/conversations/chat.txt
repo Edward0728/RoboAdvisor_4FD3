@@ -1,2 +1,2 @@
 Go Money Go
-************Go Money Go************ <br > Funds: no, fund, found <br > Stocks: YRI-T, WSP-T, WPM-T, WCP-T, WCN-T, TVE-T, TRI-T, TOU-T, TFII-T, TECK-B-T
+************Go Money Go************ <br > Funds: IGI156.CF, PHN115.CF, RBF8115.CF, PHN345.CF, RBF8345.CF <br > Stocks: YRI-T, WSP-T, WPM-T, WCP-T, WCN-T, TVE-T, TRI-T, TOU-T, TFII-T, TECK-B-T

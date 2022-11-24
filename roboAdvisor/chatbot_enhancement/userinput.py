@@ -37,7 +37,7 @@ def parse_chat(lines):
                 Age = Age + age
                 print(Age)
 
-            if re.findall(".*invest .*",line):
+            if re.findall(".*invest.*",line):
                 amount = re.findall("\d+.*",line)
                 #Amount = Amount + amount
                 print(amount)

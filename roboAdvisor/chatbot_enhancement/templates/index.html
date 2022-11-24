@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Main Page" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}" />
+    <script
+      src="https://kit.fontawesome.com/f13cc26b40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Robo-Advisor</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="."><img src="{{ url_for('static', filename='images/logo.png') }}" /></a>
+        <div class="nav__links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href=".">HOME</a></li>
+            <li><a href="./about">ABOUT</a></li>
+            <li><a href="./bot">ROBO ADVISOR</a></li>
+            <li><a href="./contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text__box">
+        <h1>Robo Advisor</h1>
+        <p>Take control of your own Financial Freedom</p>
+        <a href="./login" class="button__action">Login/Register</a>
+      </div>
+    </section>
+
+    <!--  Banks Rates   -->
+    <section class="banks__rates">
+      <h1>Advantages of Robo Advisor</h1>
+      <p>
+        Robo-advisors are automated investment platforms that offer a hands-off
+        approach to managing your investments. When you sign up for a
+        robo-advisor, you generally fill out a questionnaire that asks about
+        your personal and financial information. You can also choose a goal for
+        your investment account and answer questions about your comfort level
+        when it comes to investing risk.
+      </p>
+
+      <div class="row">
+        <div class="banks__rates__col">
+          <h3>Cheap</h3>
+          <p>
+            Often less expensive than working with a professional financial
+            advisor
+          </p>
+        </div>
+        <div class="banks__rates__col">
+          <h3>Easy</h3>
+          <p>Easy to start and may have a low account minimum</p>
+        </div>
+        <div class="banks__rates__col">
+          <h3>Consistence</h3>
+          <p>Includes ongoing management</p>
+        </div>
+      </div>
+
+      <div class="row"></div>
+    </section>
+
+    <!--  ETFs   -->
+    <section class="etfs">
+      <h1>ETFs of the optiopn</h1>
+      <p>
+        As you pay your mortgage, the amount increases, and the portion you put
+        toward interest decreases. Interest: Interest essentially acts as a fee
+        for taking on the risk of loaning you money. Your interest rate, which
+        is a percentage of your mortgage amount, directly impacts how much you
+        pay in total.
+      </p>
+
+      <div class="row">
+        <div class="etfs__col">
+          <img src="{{ url_for('static', filename='images/london.png') }}" />
+          <div class="layer">
+            <h3>SP500</h3>
+          </div>
+        </div>
+
+        <div class="etfs__col">
+          <img src="{{ url_for('static', filename='images/newyork.png') }}" />
+          <div class="layer">
+            <h3>DOW</h3>
+          </div>
+        </div>
+
+        <div class="etfs__col">
+          <img src="{{ url_for('static', filename='images/washington.png') }}" />
+          <div class="layer">
+            <h3>NASDAQ</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Our Services   -->
+
+    <section class="our__services">
+      <h1>Our Services</h1>
+      <p>
+        As you pay your mortgage, the amount increases, and the portion you put
+        toward interest decreases. Interest: Interest essentially acts as a fee
+        for taking on the risk of loaning you money. Your interest rate, which
+        is a percentage of your mortgage amount, directly impacts how much you
+        pay in total.
+      </p>
+
+      <div class="row">
+        <div class="our__services__col">
+          <img src="{{ url_for('static', filename='images/library.png') }}" />
+          <h3>Hands-Off Management</h3>
+          <p>
+            When you're investing with a personal account or a retirement
+            account through work, you may be responsible for watching and
+            managing your asset allocation. Robo-advisors automatically
+            rebalance your portfolio based on your goals and risk tolerance. You
+            also may be able to update your goals or risk level, and your
+            portfolio will be adjusted accordingly.
+          </p>
+        </div>
+
+        <div class="our__services__col">
+          <img src="{{ url_for('static', filename='images/basketball.png') }}" />
+          <h3>Relatively Low Management Fees</h3>
+          <p>
+            Most robo-advisors charge a fee based on how much money is in your
+            account. It can vary depending on the platform and the balance, but
+            often ranges from about 0.25% to 0.89% per year. In comparison, a
+            human financial advisor may charge 1% to 2%. The ETFs and mutual
+            funds you're invested in may also charge a fee. These don't depend
+            on how you buy the fund (on your own or through an advisor, for
+            example), but you may want to review the robo-advisors' fund choices
+            to compare which option has the lowest combined fees
+          </p>
+        </div>
+
+        <div class="our__services__col">
+          <img src="{{ url_for('static', filename='images/cafeteria.png') }}" />
+          <h3>Tax-Loss Harvesting</h3>
+          <p>
+            Some robo-advisors offer tax-loss harvesting as a feature. When
+            enabled, the robo-advisor can sell losing investments to "harvest"
+            tax-deductible capital losses and then buy other investments that
+            will keep your portfolio on track. The strategy could save you money
+            this year and may lead to higher long-term gains.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--  Reviews   -->
+
+    <section class="reviews__rates">
+      <h1>Reviews</h1>
+      <p>
+        Nearly 7 in 10 Millennial millionaires have some money in robos or
+        automated portfolios.
+      </p>
+
+      <div class="row">
+        <div class="reviews__rates__col">
+          <img src="{{ url_for('static', filename='images/user1.jpg') }}" />
+          <div>
+            <p>
+              Robo-advisors work well for people who need at least some help
+              with their investing portfolio. And those who need a lot of
+              expertise will likely find robo-advisors to be valuable.
+            </p>
+            <h3>Christine Berkley</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+
+        <div class="reviews__rates__col">
+          <img src="{{ url_for('static', filename='images/user2.jpg') }}" />
+          <div>
+            <p>
+              While it's smart to be cautious when trusting others with your
+              money, a robo-advisor may be just as safe as a human financial
+              advisor. But investing always comes with the risk of losing money,
+              and that's true whether you're investing on your own, hiring a
+              financial advisor or using a robo-advisor.
+            </p>
+            <h3>John Snow</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Call to Action - Contact us   -->
+
+    <section class="cta">
+      <h1>Enroll For Our Service Now</h1>
+      <a href="#" class="button__action">CONTACT US</a>
+    </section>
+
+    <!--  Footer   -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Robo Advisor.</p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+
+    <!--  JavaScript for Toggle Menu    -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

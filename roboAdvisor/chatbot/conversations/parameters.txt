@@ -1,5 +1,5 @@
-low to medium 
-small
-10%
-0.1
-4.0
+low 
+medium
+30%
+0.2
+3.9
