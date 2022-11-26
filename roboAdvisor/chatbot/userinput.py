@@ -24,6 +24,7 @@ def parse_chat(lines):
     Percentile = ''
     Volatility = ''
     Rating = ''
+    Goal = ''
     for line in lines:
         #print(line)
         if line.find(', please?') == -1:
@@ -76,14 +77,26 @@ def parse_chat(lines):
                 Rating = Rating + rating
                 print(Rating)
 
+            if re.findall(".*looking for.*",line):  
+                goal = line[line.index('looking for')+11:-1]
+                if re.findall("stable",line):
+                    Goal = 1 
+                elif re.findall("balanced",line): 
+                    Goal = 2 
+                else: 
+                    Goal = 3 
+                print('Goal: ', Goal)                
+
+
     with open('./conversations/parameters.txt','w') as p:
         p.write(Risk+'\n')
         p.write(Size+'\n')
         p.write(Percentile+'\n')
         p.write(str(Volatility)+'\n')   
         p.write(str(Rating)+'\n')
+        p.write(str(Goal)+'\n')
     #return risk_list[0], size_list[0], percentile_list[0], volatility_list[0]
-    return Risk, Size, Percentile, Volatility, Rating
+    return Risk, Size, Percentile, Volatility, Rating, Goal
     #print(size)
 
   

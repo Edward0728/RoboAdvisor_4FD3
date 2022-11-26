@@ -84,7 +84,7 @@ def multi_step_forecasts(stock_ticker,n_past, n_future):
     df_all_time = df_past.join(df_future, how='outer')
     return_rate = (df_all_time['Forecast'][-1] - current_price)/current_price
     #df_all_time.to_csv('prediction_60.csv')
-    print(df_all_time['Forecast'][-1])
+    print('Forcast in 60 days: ', df_all_time['Forecast'][-1])
 
     return return_rate
 

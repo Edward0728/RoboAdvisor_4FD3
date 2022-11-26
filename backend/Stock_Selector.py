@@ -68,7 +68,7 @@ def stock_solution(rating_stock):
         multi_step_forecasts(stock_ticker.strip(),0, n_future)
         solution.append(i)
         solution.sort(reverse=True)
-    if len(solution) != 0:
+    if len(solution) > 10:
         return solution[0:10]
     else:
         return(['no', 'stock', 'found'])    

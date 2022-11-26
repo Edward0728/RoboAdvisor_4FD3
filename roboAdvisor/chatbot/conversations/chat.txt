@@ -1,2 +1,2 @@
 Go Money Go
-************Go Money Go************ <br > Funds: TDB399.CF, TDB452.CF, TDB3477.CF, TDB3085.CF, TDB622.CF, TDB113.CF, TDB821.CF, TDB831.CF, TDB841.CF, TDB398.CF, TDB297.CF, TDB395.CF, TDB396.CF, TDB397.CF, TDB2594.CF, TDB2585.CF, TDB2591.CF, TDB3481.CF, TDB3043.CF <br > Stocks: OVV-T, KEY-T, GFL-T, ATD-T
+****************Go Money Go**************** <br > Funds: TDB399.CF 6.0%,<br /> TDB452.CF 6.0%,<br /> TDB3477.CF 6.0%,<br /> TDB3085.CF 6.0%,<br /> TDB622.CF 6.0%,<br /> TDB113.CF 6.0%,<br /> TDB821.CF 6.0%,<br /> TDB831.CF 6.0%,<br /> TDB841.CF 6.0%,<br /> TDB398.CF 6.0% <br > <br \> Stocks: WPM-T 4.0%,<br />WCP-T 4.0%,<br />WCN-T 4.0%,<br />TOU-T 4.0%,<br />OVV-T 4.0%,<br />LAC-T 4.0%,<br />KEY-T 4.0%,<br />GFL-T 4.0%,<br />FFH-T 4.0%,<br />EFN-T 4.0%

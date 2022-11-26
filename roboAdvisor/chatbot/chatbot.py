@@ -16,7 +16,7 @@ chatbot = ChatBot(
   logic_adapters=[
     'chatterbot.logic.BestMatch',
     {
-      'import_path': 'product_logicadapter.MutualFundLogicAdapter',
+      'import_path': 'product_logicadapter.FundStockLogicAdapter',
       'default_response': 'I am sorry, but I do not understand. I am still learning.',
       'maximum_similarity_threshold': 0.90
     }
@@ -56,6 +56,11 @@ trainer.train(
 
 trainer.train(
 ['Okay',
+'Can I have your name, please? (Please answer in complete sentence. Same as below.)',]
+)
+
+trainer.train(
+['Sounds Good',
 'Can I have your name, please? (Please answer in complete sentence. Same as below.)',]
 )
 
@@ -191,6 +196,21 @@ trainer.train(
 
 trainer.train(
 ['I want stocks having ratings at least 3.0.',
+'All done! Reply with "Go Money Go" and wait a second to get your customized recommendations.',]
+)
+
+trainer.train(
+['I am looking for stable income.',
+'All done! Reply with "Go Money Go" and wait a second to get your customized recommendations.',]
+)
+
+trainer.train(
+['I am looking for income and growth balanced.',
+'All done! Reply with "Go Money Go" and wait a second to get your customized recommendations.',]
+)
+
+trainer.train(
+['I am looking for active growth.',
 'All done! Reply with "Go Money Go" and wait a second to get your customized recommendations.',]
 )
 # trainer = ChatterBotCorpusTrainer(chatbot)

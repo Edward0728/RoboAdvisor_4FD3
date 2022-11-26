@@ -2,4 +2,5 @@ low to medium
 medium
 30%
 0.2
-4.8
+4.6
+2

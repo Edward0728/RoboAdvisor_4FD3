@@ -29,7 +29,7 @@ from backend.API import Stock
 #   Percentile = parameters[2]
 #   Vola = float(parameters[3])
 
-class MutualFundLogicAdapter(LogicAdapter):
+class FundStockLogicAdapter(LogicAdapter):
   def __init__(self, chatbot, **kwargs):
     super().__init__(chatbot, **kwargs)
   
@@ -46,19 +46,45 @@ class MutualFundLogicAdapter(LogicAdapter):
     #data = mutualFund.getSolution(risk,size,percentile,volatility)
     conversation = open(f'./conversations/chat.txt', 'r')
     lines = conversation.readlines() 
-    Risk, Size, Percentile, Vola, Rating= parse_chat(lines)
+    Risk, Size, Percentile, Vola, Rating, Goal= parse_chat(lines)
+
+    
     #funds = ", "
     if input_statement.text == 'Go Money Go': #or 'Edward GO':
       fund_data = mutualFund.getSolution(Risk,Size,Percentile,Vola)
       stock_data = Stock.getSolution(Rating)
-      funds = ", "
-      funds = funds.join(fund_data)
-      stocks = ", "
-      stocks = stocks.join(stock_data)
-      print(funds)
+      if 'no' not in fund_data:
+        print('fund length: ', len(fund_data))
+        if Goal==1:
+          fund_percentage= 0.8/len(fund_data)
+        if Goal==2:
+          fund_percentage= 0.6/len(fund_data)
+        if Goal==3:
+          fund_percentage= 0.4/len(fund_data)
+        fund_perc_str = ' ' + str(round(fund_percentage,4)*100)+'%'
+      else:
+        stock_perc_str = ''
+
+      if 'no' not in stock_data:
+        print(' stock length: ', len(stock_data))        
+        if Goal==1:
+          stock_percentage = 0.2/len(stock_data)
+        if Goal==2:
+          stock_percentage = 0.4/len(stock_data)     
+        if Goal==3:
+          stock_percentage = 0.6/len(stock_data)
+        stock_perc_str =' ' + str(round(stock_percentage,4)*100)+'%'                
+      else:
+        stock_perc_str = ''
+      print('fund%', fund_perc_str, 'stock%', stock_perc_str)
+
+      funds = fund_perc_str + ",<br /> "
+      funds = funds.join(fund_data) + fund_perc_str
+      stocks = stock_perc_str + ",<br />"
+      stocks = stocks.join(stock_data) + stock_perc_str
       open('./conversations/chat.txt', 'w').close()
 
-    selected_statement = Statement(text='************{}************ <br > Funds: {} <br > Stocks: {}'.format(input_statement, funds,stocks))
+    selected_statement = Statement(text='****************{}**************** <br > Funds: <br \> {} <br > <br \> Stocks: <br \> {}'.format(input_statement, funds,stocks))
     selected_statement.confidence = 0.9
     return selected_statement
   

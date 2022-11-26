@@ -73,10 +73,22 @@ def parse_chat(lines):
                 Volatility = float(volatility) / 100.0
                 print(type(Volatility))
                 print(Volatility)
+
+            if re.findall(".*looking for.*",line):  
+                goal = line[line.index('looking for')+11:-2]
+                print('goal: ', goal)
+  
+                if goal.find('balanced'):
+                    Goal = 2
+                    print(goal.find('balanced')) 
+                else: 
+                    Goal = 3 
+                print('Goal: ', Goal)                
+
     #return risk_list[0], size_list[0], percentile_list[0], volatility_list[0]
-    return Risk, Size, Percentile, Volatility
+    return Risk, Size, Percentile, Volatility, Goal
     #print(size)
-Risk, Size, Percentile, Volatility = parse_chat(lines)
-print(Volatility)
-print(type(Volatility))
+Risk, Size, Percentile, Volatility, Goal= parse_chat(lines)
+print(Goal)
+print(type(Goal))
 
