@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from chatbot import chatbot
+from chatbot import chatbotInstance
 from flask import Flask, render_template, request
 from chatterbot.conversation import Statement
 from datetime import datetime
@@ -48,7 +48,7 @@ def home():
 def get_bot_response():
     userText = request.args.get('msg')
     input_statement = Statement(text=userText)
-    response = str(chatbot.generate_response(input_statement))
+    response = str(chatbotInstance.generate_response(input_statement))
     with open(f'./conversations/chat.txt', 'a') as output_file:
       #print(str(row))
       output_file.write(str(input_statement)+'\n')
