@@ -10,7 +10,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 # Creating ChatBot Instance
-chatbot = ChatBot(
+chatbotInstance = ChatBot(
   'RoboAdvisor',
   storage_adapter='chatterbot.storage.SQLStorageAdapter',
   logic_adapters=[
@@ -38,7 +38,7 @@ training_data_personal = open('./training_data/recommendation_chat.txt').read().
 
 training_data = training_data_quesans + training_data_personal
 
-trainer = ListTrainer(chatbot)
+trainer = ListTrainer(chatbotInstance)
 trainer.train(
   training_data
 #  './training_data/greetings.yml'
