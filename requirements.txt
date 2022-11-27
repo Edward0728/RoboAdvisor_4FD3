@@ -61,7 +61,6 @@ pyasn1-modules==0.2.8
 pymongo==3.12.3
 pyparsing==3.0.9
 PySocks==1.7.1
-python-dateutil==2.8
 python-dotenv==0.21.0
 pytimeparse==1.1.8
 pytz==2021.3
