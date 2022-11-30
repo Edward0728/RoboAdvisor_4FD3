@@ -1,3 +1,0 @@
-('tag',)
-('statement',)
-('tag_association',)
