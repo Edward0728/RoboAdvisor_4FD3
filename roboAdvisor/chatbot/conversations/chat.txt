@@ -1,4 +1,86 @@
 Go Money Go
+<<<<<<< HEAD
 ****************Go Money Go**************** <br > Funds: <br \> TDB399.CF 4.0%,<br /> TDB452.CF 4.0%,<br /> TDB3477.CF 4.0%,<br /> TDB3085.CF 4.0%,<br /> TDB622.CF 4.0%,<br /> TDB113.CF 4.0%,<br /> TDB821.CF 4.0%,<br /> TDB831.CF 4.0%,<br /> TDB841.CF 4.0%,<br /> TDB398.CF 4.0% <br > <br \> Stocks: <br \> WPM-T 6.0%,<br />WCP-T 6.0%,<br />WCN-T 6.0%,<br />TOU-T 6.0%,<br />OVV-T 6.0%,<br />LAC-T 6.0%,<br />KEY-T 6.0%,<br />GFL-T 6.0%,<br />FFH-T 6.0%,<br />EFN-T 6.0%
 Hello
 Hi
+=======
+****************Go Money Go**************** <br > Funds: TDB399.CF 6.0%,<br /> TDB452.CF 6.0%,<br /> TDB3477.CF 6.0%,<br /> TDB3085.CF 6.0%,<br /> TDB622.CF 6.0%,<br /> TDB113.CF 6.0%,<br /> TDB821.CF 6.0%,<br /> TDB831.CF 6.0%,<br /> TDB841.CF 6.0%,<br /> TDB398.CF 6.0% <br > <br \> Stocks: WPM-T 4.0%,<br />WCP-T 4.0%,<br />WCN-T 4.0%,<br />TOU-T 4.0%,<br />OVV-T 4.0%,<br />LAC-T 4.0%,<br />KEY-T 4.0%,<br />GFL-T 4.0%,<br />FFH-T 4.0%,<br />EFN-T 4.0%
+money 
+How much money have you lost?
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+stable
+I am looking for stable income.
+mutual fund
+Sure. Letus get started.
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+mutual fund
+Sure. Letus get started.
+money
+How much money have you lost?
+3000
+What fund size do you prefer at this time, please? (small, medium, large)
+medium
+I want some medium size funds.
+mutual fund
+Sure. Letus get started.
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+active
+I am looking for stable income.
+mutual fund
+Sure. Letus get started.
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+active
+I am looking for stable income.
+stable
+I am looking for stable income.
+mutual fund
+Sure. Letus get started.
+hi
+How are you doing?
+good how are you 
+I am doing well, how about you?
+good
+That's good.
+i want to lose money
+What is your question?
+i want to invest money
+I want to invest $5000-$20000.
+yes
+Yesterday was the 13th, right?
+yes
+Yesterday was the 13th, right?
+yes
+Yesterday was the 13th, right?
+yes
+Yesterday was the 13th, right?
+no 
+I'm sorry, but I don't have any.
+i want to invest money
+I want to invest $5000-$20000.
+5000
+What fund size do you want at this time, please? (small, medium, large)
+large
+I want some medium size funds.
+medium
+I want some medium size funds.
+large 
+I want some medium size funds.
+mutual fund
+Sure. Letus get started.
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+mutual fund
+Sure. Letus get started.
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+mutual fund
+Sure. Letus get started.
+mutual fund
+Sure. Letus get started.
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+>>>>>>> 5a023afa1695b07a88763e1ebcdff6c960f1bf61
