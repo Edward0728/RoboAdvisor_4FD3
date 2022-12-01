@@ -1,6 +1,4 @@
 # This is to build an interface between front end and back end
-from .StockData import stockinfo_request
-from .StockPlot import stockplot_request
 from .Fund_Selector import *
 from .Stock_Selector import *
 #from .CSV_retriver import fundlist_request
