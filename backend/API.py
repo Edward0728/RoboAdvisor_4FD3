@@ -7,7 +7,6 @@ from .Stock_Selector import *
 # from .Stock_Selector import *
 #from .CSV_retriver import fundlist_request
 
-
 # QIn Webscriping API information
 # L7xmlCPHedkoWw2PThNVMIAaJVuCRyGO
 # curl -X GET "https://api.webscrapingapi.com/v1?url=https%3A%2F%2Fapi.ipify.org%2F%3Fformat%3Djson&api_key=L7xmlCPHedkoWw2PThNVMIAaJVuCRyGO" -H "content-type: application/json"
