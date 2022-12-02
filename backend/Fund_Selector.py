@@ -67,8 +67,11 @@ def fund_solution(risk_fund,size_fund,rank_fund,volatility_fund):
         #print(i)
         if i in size_fund and i in rank_fund and i in volatility_fund:
             solution.append(i)
-    if len(solution) > 10:
+    print('fund solution: ', solution)
+    if len(solution) >= 10:
         return solution[0:10]
+    elif len(solution) > 0 and len(solution) < 10:
+        return solution
     else:
         return(['no', 'fund', 'found'])    
 

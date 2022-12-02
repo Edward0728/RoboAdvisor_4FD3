@@ -47,12 +47,16 @@ class FundStockLogicAdapter(LogicAdapter):
     conversation = open(f'./conversations/chat.txt', 'r')
     lines = conversation.readlines() 
     Risk, Size, Percentile, Vola, Rating, Goal= parse_chat(lines)
-
+    fund_perc_str = ' '
+    stock_perc_str =' '
     
     #funds = ", "
     if input_statement.text == 'Go Money Go': #or 'Edward GO':
       fund_data = mutualFund.getSolution(Risk,Size,Percentile,Vola)
       stock_data = Stock.getSolution(Rating)
+
+      print('fund data: ', fund_data)
+      print('stock data: ', stock_data)
       if 'no' not in fund_data:
         print('fund length: ', len(fund_data))
         if Goal==1:
@@ -61,9 +65,9 @@ class FundStockLogicAdapter(LogicAdapter):
           fund_percentage= 0.6/len(fund_data)
         if Goal==3:
           fund_percentage= 0.4/len(fund_data)
-        fund_perc_str = ' ' + str(round(fund_percentage,4)*100)+'%'
-      else:
-        stock_perc_str = ''
+        fund_perc_str = fund_perc_str + str(round(fund_percentage,4)*100)+'%'
+      # if 'no' in fund_data:
+      #   fund_perc_str = ' '
 
       if 'no' not in stock_data:
         print(' stock length: ', len(stock_data))        
@@ -73,10 +77,11 @@ class FundStockLogicAdapter(LogicAdapter):
           stock_percentage = 0.4/len(stock_data)     
         if Goal==3:
           stock_percentage = 0.6/len(stock_data)
-        stock_perc_str =' ' + str(round(stock_percentage,4)*100)+'%'                
-      else:
-        stock_perc_str = ''
-      print('fund%', fund_perc_str, 'stock%', stock_perc_str)
+        stock_perc_str = stock_perc_str + str(round(stock_percentage,4)*100)+'%'                
+      # if 'no' in stock_data:
+      #   stock_perc_str = ' '
+
+      #print('fund%', fund_perc_str, 'stock%', stock_perc_str)
 
       funds = fund_perc_str + ",<br /> "
       funds = funds.join(fund_data) + fund_perc_str

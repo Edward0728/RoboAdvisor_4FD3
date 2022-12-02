@@ -1,6 +1,6 @@
-low to medium 
-medium
-30%
-0.2
-4.6
+low 
+small
+15%
+0.15
+4.7
 3
