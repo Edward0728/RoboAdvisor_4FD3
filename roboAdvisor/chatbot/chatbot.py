@@ -109,7 +109,7 @@ trainer.train(
 )
 
 trainer.train(
-['I want to invest $5000-$20000.',
+['I want to invest $5000-$10000.',
 'What fund size do you prefer at this time, please? (small, medium, large)',]
 )
 
@@ -119,7 +119,7 @@ trainer.train(
 )
 
 trainer.train(
-['I want to invest $50000-$100000.',
+['I want to invest $2000-$6000.',
 'What fund size do you prefer at this time, please? (small, medium, large)',]
 )
 
@@ -189,7 +189,7 @@ trainer.train(
 )
 
 trainer.train(
-['I want stocks having ratings at least 4.1.',
+['I want stocks having ratings at least 4.5.',
 'All done! Reply with "Go Money Go "and wait a second to get your customized recommendations.',]
 )
 

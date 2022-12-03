@@ -1,2 +1,22 @@
 Go Money Go
 ****************Go Money Go**************** <br > Funds: <br \> no ,<br /> fund ,<br /> found  <br > <br \> Stocks: <br \> WCP-T 7.5%,<br />OVV-T 7.5%,<br />KEY-T 7.5%,<br />GFL-T 7.5%,<br />EFN-T 7.5%,<br />CVE-T 7.5%,<br />CCO-T 7.5%,<br />ATD-T 7.5%
+Hi
+How are you doing?
+I am doing well.
+That is good to hear
+Can you help me with some investment ideas?
+Sure. Lets get started.
+Great.
+Can I have your name, please? (Please answer in complete sentence. Same as below.)
+My name is Qin.
+May I ask for your age, please?
+I am 31 years old.
+How much money do you want to invest this time, please?
+I want to invest $1000-$999999.
+I want to invest $5000-$20000.
+I want to invest $1000-$100000.
+What fund size do you want at this time, please? (small, medium, large)
+I want to invest $1000-$101000.
+I want to invest $5000-$20000.
+I want to invest $1000-$100000.
+What fund size do you want at this time, please? (small, medium, large)

@@ -46,9 +46,9 @@ class Stock():
     stock_info = stockinfo_request(symbol)
     return stock_info
 
-  def get_graph(symbol):
-    stock_graph = stockplot_request(symbol)
-    return stock_graph
+  # def get_graph(symbol):
+  #   stock_graph = stockplot_request(symbol)
+  #   return stock_graph
 
 # should return the list of mutual funds that fall in the looking risk level
   def getRating(rating):

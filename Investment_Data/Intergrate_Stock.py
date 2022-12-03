@@ -11,7 +11,7 @@ date = '2022-12-02'  # we could get input for this value
 main_df = pd.read_csv(f'./Investment_Data/stocks-market-leaders-export-{date}.csv')
 performance_df = pd.read_csv(f'./Investment_Data/stocks-market-leaders-export-{date} (1).csv')
 
-both_df = pd.concat([performance_df[0:-1], main_df[['Change', '% Change', 'Price Volume','Time']][0:-1]], axis = 1)
+both_df = pd.concat([performance_df, main_df[['Change', '% Change', 'Price Volume','Time']]], axis = 1)
 symbol_list = both_df['Symbol'].values.tolist()
 #print(len(symbol_list))
 
