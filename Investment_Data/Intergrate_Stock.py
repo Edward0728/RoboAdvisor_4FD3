@@ -38,7 +38,7 @@ for i in symbol_list:
     # index_2 = data[rating_index-27:rating_index].index('<')
     #print(index_1, index_2)
     rating = data[rating_index-28:rating_index-24].strip()
-    print(rating)
+    print(i, 'rating: ', rating)
     rating_list.append(rating)
 
 #print(risk_list)     

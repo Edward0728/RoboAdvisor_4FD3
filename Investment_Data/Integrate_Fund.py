@@ -14,7 +14,7 @@ performance_df = pd.read_csv(f'./Investment_Data/funds-market-leaders-export-{da
 
 both_df = pd.concat([performance_df, main_df[['Change', '% Change', 'Assets Under Management','Time']]], axis = 1)
 symbol_list = both_df['Symbol'].values.tolist()
-print(len(symbol_list))
+print('Stock #: ', len(symbol_list))
 
 conn = http.client.HTTPSConnection("api.webscrapingapi.com")
 risk_list = []
@@ -39,7 +39,7 @@ for i in symbol_list:
     index_2 = data[risk_index-60:risk_index].index('<')
     #print(index_1, index_2)
     risk = data[risk_index-60:risk_index][index_1+1:index_2].strip()
-    print(risk)
+    print(i, 'risk: ' , risk)
     risk_list.append(risk)
 
 #print(risk_list)     
