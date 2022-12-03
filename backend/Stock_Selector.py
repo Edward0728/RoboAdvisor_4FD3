@@ -68,7 +68,7 @@ def stock_solution(rating_stock):
         multi_step_forecasts(stock_ticker.strip(),0, n_future)
         solution.append(i)
         solution.sort(reverse=True)
-        #print('stock solution: ', solution)
+        print('stock solution: ', solution)
     if len(solution) >= 10:
         return solution[0:10]
     elif len(solution) > 0 and len(solution) < 10:
