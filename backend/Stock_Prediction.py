@@ -18,6 +18,7 @@ def multi_step_forecasts(stock_ticker,n_past, n_future):
     end_date = current_time.strftime('%Y-%m-%d')
     stock_data = yf.download(f'{stock_name}', start= start_date, end=end_date)
     current_price = stock_data['Close'][-1]
+    print('Current price:', current_price)
     #stock_data.head()
 
     # 2. Visualize Historical Stock Price
@@ -82,9 +83,10 @@ def multi_step_forecasts(stock_ticker,n_past, n_future):
     )
 
     df_all_time = df_past.join(df_future, how='outer')
+    print('Price in 60 days: ', df_all_time['Forecast'][-1] )
     return_rate = (df_all_time['Forecast'][-1] - current_price)/current_price
     #df_all_time.to_csv('prediction_60.csv')
-    print('Forcast in 60 days: ', df_all_time['Forecast'][-1])
+    print(stock_ticker, 'return rate in 60 days: ', df_all_time['Forecast'][-1])
 
     return return_rate
 

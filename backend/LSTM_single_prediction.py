@@ -90,61 +90,18 @@ def multi_step_forecasts(stock_ticker,n_past, n_future):
 
     return return_rate
 
-stock_ticker = 'TOU.TO'
-x = multi_step_forecasts(stock_ticker, 0, 60)
-print(stock_ticker,'return in 60 days at $', x)
 
+date = '2022-12-01'  # we could get input for this value
+stock_df = pd.read_csv(f'./Investment_Data/Stock_List.csv')
+stock_list = stock_df['Symbol'].tolist()
+stock_pred = []
 
-# #print(data)
-# model = load_model('LSTM_3.h5')
+for i in stock_list:
+    stock_ticker = i[:-2]+'.TO'
+    x = multi_step_forecasts(stock_ticker, 0, 60)
+    print(stock_ticker,'return% in 60 days at ', x)
+    stock_pred.append(x)
 
-# # 1. Acquire Stock Data Using API
-# stock_name = 'SU.TO '
-# start_date = '2016-01-01'
-# end_date = '2022-11-18'
-# stock_data = yf.download(f'{stock_name}', start= start_date, end=end_date)
-# stock_data.head()
+stock_df['Prediction_60'] =stock_pred
+stock_df.to_csv('prediction_60.csv')
 
-# # 2. Visualize Historical Stock Price
-# plt.figure(figsize=(15, 8))
-# plt.title(f'{stock_name} Stock Prices History')
-# plt.plot(stock_data['Close'])
-# plt.xlabel('Date')
-# plt.ylabel('Prices ($)')
-# # plt.show()
-
-# # 3. Prepare Training Data Set
-# close_prices = stock_data['Close']
-# #print('close_prices type: ', type(close_prices))
-# values = close_prices.values
-
-# # Use the Scikit-Learn MinMaxScaler to normalize all our stock data ranging from 0 to 1.
-# # We also reshape our normalized data into a two-dimensional array.
-# scaler = MinMaxScaler(feature_range=(0, 1))
-# scaled_data = scaler.fit_transform(values.reshape(-1, 1))
-
-# window_size = 100
-
-# # 4. Prepare Test Data Set
-# history_data = scaled_data
-
-# # create feature data (x_into_model) and label data (y_test)from our test set
-# x_into_model = []
-# y_test = scaled_data
-# for i in range(window_size, len(history_data)):
-#   x_into_model.append(history_data[i-window_size:i, 0])
-
-# # Reshape again the x_into_model and y_test into a three-dimensional array
-# x_into_model = np.array(x_into_model)
-# x_into_model = np.reshape(x_into_model, (x_into_model.shape[0], x_into_model.shape[1], 1))
-
-# # 7. Evaluate Model with RMSE
-# # predictions = model.predict(x_into_model)
-
-# # forecast the next 30 days
-# df1 = multi_step_forecasts(model, close_prices, x_into_model, y_test,n_past=0, n_future=60)
-# df1.plot(title=stock_name)
-
-# # forecast the last 20 days and the next 30 days
-# # df2 = multi_step_forecasts(model, close_prices, x_into_model, y_test, n_past=10, n_future=100)
-# # df2.plot(title=stock_name)

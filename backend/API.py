@@ -68,10 +68,4 @@ class Stock():
     #stock_list = final_solution(ratingstock_request(rating),stockrank_request(percentile),stockvolatility_request(volatility))
     stock_list = stock_solution(ratingstock_request(rating))
     return stock_list
-#print(stock.get_info('AMZN'))
-#stock.get_graph('AMZN')
 
-# stock = 'TLSA'
-# stock = 'AAPL'
-# stock = 'AMZN'
-# stock = 'IBM'
