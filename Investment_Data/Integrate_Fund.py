@@ -14,7 +14,7 @@ performance_df = pd.read_csv(f'./Investment_Data/funds-market-leaders-export-{da
 
 both_df = pd.concat([performance_df, main_df[['Change', '% Change', 'Assets Under Management','Time']]], axis = 1)
 symbol_list = both_df['Symbol'].values.tolist()
-print('Stock #: ', len(symbol_list))
+print('Fund #: ', len(symbol_list))
 
 conn = http.client.HTTPSConnection("api.webscrapingapi.com")
 risk_list = []

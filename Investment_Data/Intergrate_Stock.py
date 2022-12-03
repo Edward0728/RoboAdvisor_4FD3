@@ -13,7 +13,8 @@ performance_df = pd.read_csv(f'./Investment_Data/stocks-market-leaders-export-{d
 
 both_df = pd.concat([performance_df, main_df[['Change', '% Change', 'Price Volume','Time']]], axis = 1)
 symbol_list = both_df['Symbol'].values.tolist()
-#print(len(symbol_list))
+print('Stock #: ', len(symbol_list))
+
 
 conn = http.client.HTTPSConnection("api.webscrapingapi.com")
 rating_list = []
