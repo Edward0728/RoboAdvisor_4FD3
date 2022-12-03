@@ -6,7 +6,7 @@ dirname = os.path.dirname(__file__)
 #mutualFund_CSV = pd.read_csv (r'/Users/qinyang/PycharmProjects/RoboAdvisor/Investment_Data/all_funds_data.csv')
 date = '2022-12-01'
 
-allFundName = os.path.join(dirname, '../Investment_Data/all_funds_all_data_{}.csv'.format(date))
+allFundName = os.path.join(dirname, '../Investment_Data/funds_{}.csv'.format(date))
 
 mutualFund_CSV = pd.read_csv (allFundName)
 #risk_levels = ['None','Low','Low to Medium','Medium','Medium to High','High']
