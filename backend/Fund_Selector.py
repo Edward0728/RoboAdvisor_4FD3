@@ -4,7 +4,7 @@ import os
 dirname = os.path.dirname(__file__)
 # Change the CSV file address to your CSV file path
 #mutualFund_CSV = pd.read_csv (r'/Users/qinyang/PycharmProjects/RoboAdvisor/Investment_Data/all_funds_data.csv')
-date = '2022-10-25'
+date = '2022-12-01'
 
 allFundName = os.path.join(dirname, '../Investment_Data/all_funds_all_data_{}.csv'.format(date))
 

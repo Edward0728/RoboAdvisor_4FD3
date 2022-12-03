@@ -1,5 +1,5 @@
 low 
-small
+large
 15%
 0.15
 4.7

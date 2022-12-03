@@ -6,7 +6,7 @@ from .Stock_Prediction import *
 dirname = os.path.dirname(__file__)
 # Change the CSV file address to your CSV file path
 #mutualStock_CSV = pd.read_csv (r'/Users/qinyang/PycharmProjects/RoboAdvisor/Investment_Data/all_stocks_data.csv')
-date = '2022-11-12'
+date = '2022-12-02'
 
 allStockName = os.path.join(dirname, '../Investment_Data/stocks_{}.csv'.format(date))
 Stock_CSV = pd.read_csv (allStockName)
@@ -68,7 +68,7 @@ def stock_solution(rating_stock):
         multi_step_forecasts(stock_ticker.strip(),0, n_future)
         solution.append(i)
         solution.sort(reverse=True)
-        print('stock solution: ', solution)
+        #print('stock solution: ', solution)
     if len(solution) >= 10:
         return solution[0:10]
     elif len(solution) > 0 and len(solution) < 10:
