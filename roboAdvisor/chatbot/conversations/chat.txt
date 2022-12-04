@@ -1,2 +1,18 @@
 Go Money Go
+<<<<<<< Updated upstream
 ****************Go Money Go**************** <br > Funds: <br \> no ,<br /> fund ,<br /> found  <br > <br \> Stocks: <br \> WCP-T 7.5%,<br />OVV-T 7.5%,<br />KEY-T 7.5%,<br />GFL-T 7.5%,<br />EFN-T 7.5%,<br />CVE-T 7.5%,<br />CCO-T 7.5%,<br />ATD-T 7.5%
+=======
+****************Go Money Go**************** <br > Funds: <br \> TDB399.CF 8.0%,<br /> TDB452.CF 8.0%,<br /> TDB3477.CF 8.0%,<br /> TDB3085.CF 8.0%,<br /> TDB622.CF 8.0%,<br /> TDB113.CF 8.0%,<br /> TDB821.CF 8.0%,<br /> TDB831.CF 8.0%,<br /> TDB841.CF 8.0%,<br /> TDB398.CF 8.0% <br > <br \> Stocks: <br \> no,<br />stock,<br />found
+>>>>>>> Stashed changes
+hello
+Hi
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+hell
+Hi
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+stock
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
