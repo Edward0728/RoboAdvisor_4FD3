@@ -1,15 +1,6 @@
-<<<<<<< Updated upstream
-low 
-large
-15%
-0.15
-4.7
-3
-=======
 low to medium 
 medium
 30%
 0.2
-4.65
+4.3
 1
->>>>>>> Stashed changes

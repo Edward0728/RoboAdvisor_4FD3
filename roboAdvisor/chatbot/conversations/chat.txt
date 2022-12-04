@@ -1,3 +1,2 @@
 Go Money Go
-<<<<<<< Updated upstream
-****************Go Money Go**************** <br > Funds: <br \> no ,<br /> fund ,<br /> found  <br > <br \> Stocks: <br \> WCP-T 7.5%,<br />OVV-T 7.5%,<br />KEY-T 7.5%,<br />GFL-T 7.5%,<br />EFN-T 7.5%,<br />CVE-T 7.5%,<br />CCO-T 7.5%,<br />ATD-T 7.5%
+****************Go Money Go**************** <br > Funds: <br \> no ,<br /> fund ,<br /> found  <br > <br \> Stocks: <br \> WSP-T 2.0%,<br />WPM-T 2.0%,<br />WCP-T 2.0%,<br />WCN-T 2.0%,<br />TVE-T 2.0%,<br />TOU-T 2.0%,<br />TFII-T 2.0%,<br />TECK-B-T 2.0%,<br />STN-T 2.0%,<br />SSRM-T 2.0%

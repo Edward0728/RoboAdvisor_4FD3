@@ -60,19 +60,22 @@ def stockvolatility_request(volatility):
 
 def stock_solution(rating_stock):
 #def final_solution(rating_stock,size_stock,rank_stock,volatility_stock):
-    solution = []
+    solution_rate = []
     print(rating_stock)
     for i in rating_stock:
         stock_ticker = i[:-2]+'.TO'
         print(stock_ticker)
-        multi_step_forecasts(stock_ticker.strip(),0, n_future)
-        solution.append(i)
-        solution.sort(reverse=True)
+        x = multi_step_forecasts(stock_ticker.strip(),0, n_future)
+        solution_rate.append({i:x})
+        def rate(stock):
+            return stock[i]      
+        solution_rate.sort(key = rate, reverse=True)
+        solution = (i.keys() for i in solution_rate)
         print('stock solution: ', solution)
     if len(solution) >= 10:
-        return solution[0:10]
+        return solution[0:10].keys()
     elif len(solution) > 0 and len(solution) < 10:
-        return solution
+        return solution.keys()
     else:
         return(['no', 'stock', 'found'])    
 
