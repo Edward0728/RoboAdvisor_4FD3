@@ -38,7 +38,7 @@ for i in symbol_list:
     index_1 = data[risk_index-60:risk_index].index('>')
     index_2 = data[risk_index-60:risk_index].index('<')
     #print(index_1, index_2)
-    risk = data[risk_index-60:risk_index][index_1+1:index_2].strip()
+    risk = data[risk_index-60:risk_index][index_1+1:index_2].strip().lower()
     print(i, 'risk: ' , risk)
     risk_list.append(risk)
 
