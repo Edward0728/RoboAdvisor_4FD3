@@ -1,17 +1,19 @@
+i
+Could I borrow a cup of sugar?
 Hi
 How are you doing?
 I am doing well.
 That is good to hear
-Can you give me some investment suggestioins?
+Can you give me some investment recommendations?
 Sure. Let us get started.
-Sounds great.
+Sounds good.
 Can I have your name, please? (Please answer in complete sentence. Same as below.)
 My name is Edward.
 May I ask for your age, please?
 I am 31 years old.
 How much money do you want to invest this time, please?
-I want to invest $1000-$10000.
-What fund size do you prefer at this time, please? (small, medium, large)
+I want to invest $5000-$20000.
+What fund size do you want at this time, please? (small, medium, large)
 I want some medium size funds.
 What fund percentile do you want, please? (top 10%, 15%, 30%)
 I want top 30% funds.

@@ -66,16 +66,16 @@ def stock_solution(rating_stock):
         stock_ticker = i[:-2]+'.TO'
         print(stock_ticker)
         x = multi_step_forecasts(stock_ticker.strip(),0, n_future)
-        solution_rate.append({i:x})
+        solution_rate.append((i,x))
         def rate(stock):
-            return stock[i]      
+            return stock[1]      
         solution_rate.sort(key = rate, reverse=True)
-        solution = (i.keys() for i in solution_rate)
-        print('stock solution: ', solution)
+    solution = (i[1] for i in solution_rate)
+    #print('stock solution: ', solution)
     if len(solution) >= 10:
-        return solution[0:10].keys()
+        return solution[0:10]
     elif len(solution) > 0 and len(solution) < 10:
-        return solution.keys()
+        return solution
     else:
         return(['no', 'stock', 'found'])    
 
