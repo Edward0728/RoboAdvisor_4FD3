@@ -14,7 +14,7 @@
   <body>
     <section class="sub__header">
       <nav>
-        <a href="."><img src="{{ url_for('static', filename='images/logo.png') }}" /></a>
+        <a href="/"><h2 class="no-margins">{{ user_manager.USER_APP_NAME }}</h2></a>
         <div class="nav__links" id="navLinks">
           <i class="fa-solid fa-times" onclick="hideMenu()"></i>
           <ul>
@@ -22,6 +22,15 @@
             <li><a href="./about">ABOUT</a></li>
             <li><a href="./bot">ROBO ADVISOR</a></li>
             <li><a href="./contact">CONTACT</a></li>
+            <li>
+              {% if call_or_get(current_user.is_authenticated) %}
+                <a href="{{ url_for('user.edit_user_profile') }}">{{ current_user.username or current_user.email }}</a>
+                &nbsp; | &nbsp;
+                <a href="{{ url_for('user.logout') }}">{%trans%}Sign out{%endtrans%}</a>
+            {% else %}
+                <a href="{{ url_for('user.login') }}">{%trans%}Sign in{%endtrans%}</a>
+            {% endif %}
+            </li>
           </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>

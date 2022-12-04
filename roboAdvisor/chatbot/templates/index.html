@@ -22,6 +22,15 @@
             <li><a href="./about">ABOUT</a></li>
             <li><a href="./bot">ROBO ADVISOR</a></li>
             <li><a href="./contact">CONTACT</a></li>
+            <li>
+              {% if call_or_get(current_user.is_authenticated) %}
+                <a href="{{ url_for('user.edit_user_profile') }}">{{ current_user.username or current_user.email }}</a>
+                &nbsp; | &nbsp;
+                <a href="{{ url_for('user.logout') }}">{%trans%}Sign out{%endtrans%}</a>
+            {% else %}
+                <a href="{{ url_for('user.login') }}">{%trans%}Sign in{%endtrans%}</a>
+            {% endif %}
+            </li>
           </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -30,7 +39,7 @@
       <div class="text__box">
         <h1>Robo Advisor</h1>
         <p>Take control of your own Financial Freedom</p>
-        <a href="./login" class="button__action">Login/Register</a>
+        <a href="{{ url_for('user.login') }}" class="button__action">Login/Register</a>
       </div>
     </section>
 
@@ -209,7 +218,7 @@
 
     <section class="cta">
       <h1>Enroll For Our Service Now</h1>
-      <a href="#" class="button__action">CONTACT US</a>
+      <a href="./contact" class="button__action">CONTACT US</a>
     </section>
 
     <!--  Footer   -->
