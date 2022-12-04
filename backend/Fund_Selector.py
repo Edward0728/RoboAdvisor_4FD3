@@ -29,7 +29,7 @@ def fundinfo_request(symbol):
 def riskfund_request(risk):
     print('get risk as: ', risk)
     print(type(risk))
-    fund_list = mutualFund_CSV.loc[mutualFund_CSV['Risk'].lower() == risk.strip(), 'Symbol'].tolist()
+    fund_list = mutualFund_CSV.loc[mutualFund_CSV['Risk'] == risk.strip(), 'Symbol'].tolist()
     #data = json.dumps(fund_list)
     return fund_list
     #return data
