@@ -1,10 +1,11 @@
+import os
+import pandas as pd
 # Package Plan
 import numpy as np
 import matplotlib.pyplot as plt
 import yfinance as yf
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
-import pandas as pd
 from datetime import *
 
 # generate the multi-step forecasts
@@ -91,58 +92,36 @@ def multi_step_forecasts(stock_ticker,n_past = 0, n_future = 60):
     return return_rate
 
 
+def stock_solution(rating_stock):
+#def final_solution(rating_stock,size_stock,rank_stock,volatility_stock):
+    solution_rate = []
+    solution=[]
+    print(rating_stock)
+    for i in rating_stock:
+        stock_ticker = i[:-2]+'.TO'
+        print(stock_ticker)
+        x = multi_step_forecasts(stock_ticker.strip())
+        solution_rate.append((i,x))
+        def rate(stock):
+            return stock[1]      
+        solution_rate.sort(key = rate, reverse=True)
+        print(solution_rate)
+    for i in solution_rate:
+        solution.append(i[0])
+    #print('stock solution: ', solution)
+    if len(solution) >= 10:
+        return solution[0:10]
+    elif len(solution) > 0 and len(solution) < 10:
+        return solution
+    else:
+        return(['no', 'stock', 'found'])    
 
+dirname = os.path.dirname(__file__)
+# Change the CSV file address to your CSV file path
+#mutualFund_CSV = pd.read_csv (r'/Users/qinyang/PycharmProjects/RoboAdvisor/Investment_Data/all_funds_data.csv')
 
-# #print(data)
-# model = load_model('LSTM_3.h5')
+sortingStock = pd.read_csv('./Investment_Data/stock_sorting_test.csv')['Symbol'].tolist()
+print('sortingStock: ', sortingStock)
 
-# # 1. Acquire Stock Data Using API
-# stock_name = 'SU.TO '
-# start_date = '2016-01-01'
-# end_date = '2022-11-18'
-# stock_data = yf.download(f'{stock_name}', start= start_date, end=end_date)
-# stock_data.head()
-
-# # 2. Visualize Historical Stock Price
-# plt.figure(figsize=(15, 8))
-# plt.title(f'{stock_name} Stock Prices History')
-# plt.plot(stock_data['Close'])
-# plt.xlabel('Date')
-# plt.ylabel('Prices ($)')
-# # plt.show()
-
-# # 3. Prepare Training Data Set
-# close_prices = stock_data['Close']
-# #print('close_prices type: ', type(close_prices))
-# values = close_prices.values
-
-# # Use the Scikit-Learn MinMaxScaler to normalize all our stock data ranging from 0 to 1.
-# # We also reshape our normalized data into a two-dimensional array.
-# scaler = MinMaxScaler(feature_range=(0, 1))
-# scaled_data = scaler.fit_transform(values.reshape(-1, 1))
-
-# window_size = 100
-
-# # 4. Prepare Test Data Set
-# history_data = scaled_data
-
-# # create feature data (x_into_model) and label data (y_test)from our test set
-# x_into_model = []
-# y_test = scaled_data
-# for i in range(window_size, len(history_data)):
-#   x_into_model.append(history_data[i-window_size:i, 0])
-
-# # Reshape again the x_into_model and y_test into a three-dimensional array
-# x_into_model = np.array(x_into_model)
-# x_into_model = np.reshape(x_into_model, (x_into_model.shape[0], x_into_model.shape[1], 1))
-
-# # 7. Evaluate Model with RMSE
-# # predictions = model.predict(x_into_model)
-
-# # forecast the next 30 days
-# df1 = multi_step_forecasts(model, close_prices, x_into_model, y_test,n_past=0, n_future=60)
-# df1.plot(title=stock_name)
-
-# # forecast the last 20 days and the next 30 days
-# # df2 = multi_step_forecasts(model, close_prices, x_into_model, y_test, n_past=10, n_future=100)
-# # df2.plot(title=stock_name)
+result = stock_solution(sortingStock)
+print(result)

@@ -61,6 +61,7 @@ def stockvolatility_request(volatility):
 def stock_solution(rating_stock):
 #def final_solution(rating_stock,size_stock,rank_stock,volatility_stock):
     solution_rate = []
+    solution = []
     print(rating_stock)
     for i in rating_stock:
         stock_ticker = i[:-2]+'.TO'
@@ -70,7 +71,9 @@ def stock_solution(rating_stock):
         def rate(stock):
             return stock[1]      
         solution_rate.sort(key = rate, reverse=True)
-    solution = (i[1] for i in solution_rate)
+        print(solution_rate)
+    for i in solution_rate:
+        solution.append(i[0])
     #print('stock solution: ', solution)
     if len(solution) >= 10:
         return solution[0:10]
