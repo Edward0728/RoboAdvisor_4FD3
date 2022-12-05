@@ -13,8 +13,9 @@ def multi_step_forecasts(stock_ticker,n_past = 0, n_future = 60):
     # 1. Acquire Stock Data Using API
     stock_name = stock_ticker
     start_date = '2016-01-01'
-    current_time = datetime.now()
-    end_date = current_time.strftime('%Y-%m-%d')
+    #current_time = datetime.now()
+    #end_date = current_time.strftime('%Y-%m-%d')
+    end_date = '2022-12-02'
     stock_data = yf.download(f'{stock_name}', start= start_date, end=end_date)
     current_price = stock_data['Close'][-1]
     print('Current price:', current_price)
