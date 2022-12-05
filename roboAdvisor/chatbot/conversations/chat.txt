@@ -1,2 +1,120 @@
-Go Money Go
-****************Go Money Go**************** <br > Funds: <br \> no ,<br /> fund ,<br /> found  <br > <br \> Stocks: <br \> KEY-T 20.0%,<br />ATD-T 20.0%,<br />EFN-T 20.0%
+Hello 
+Hi
+Hello
+Hi
+Can you give me some investment suggestioins?
+Sure. Let us get started.
+Sounds good.
+Can I have your name, please? (Please answer in complete sentence. Same as below.)
+My name is Tom.
+May I ask for your age, please?
+I am 31 years old.
+How much money do you want to invest this time, please?
+I want to invest $5000-$20000.
+What fund size do you want at this time, please? (small, medium, large)
+I want some medium size funds.
+What fund percentile do you want, please? (top 10%, 15%, 30%)
+I want top 30% funds.
+What fund volatility can you take, please? (e.g.up to 10%)
+I can take up to 20% volatility.
+What fund risk level can you take, please? (low, low to medium, medium, medium to high , high)
+I can take low to medium risk.
+What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)
+I want stocks having ratings at least 4.6.
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+I am looking for stable income.
+All done! Reply with 'Go Money Go' and wait a second to get your customized recommendations.
+Investment 
+Sure. Let us get started.
+Nice
+What is your question?
+Investment 
+Sure. Let us get started.
+Sounds good 
+Can I have your name, please? (Please answer in complete sentence. Same as below.)
+HL 
+What is your question?
+My name is hl 
+May I ask for your age, please?
+29
+What is your question?
+My age is 29
+What is your question?
+I am 29 years old 
+How much money do you want to invest this time, please?
+$1000-$10000
+What is your question?
+hello
+Hi
+investment
+Sure. Let us get started.
+great
+Can I have your name, please? (Please answer in complete sentence. Same as below.)
+my name is hl
+May I ask for your age, please?
+i am 29 years old
+How much money do you want to invest this time, please?
+I want to invest $1000-%10000
+Are you a robot?
+I want to invest $1000-$10000
+What fund size do you prefer at this time, please? (small, medium, large)
+large
+I want some medium size funds.
+I want some large size of funds
+Are you a robot?
+I want some large size funds
+What fund percentile do you like, please? (top 10%, 15%, 30%)
+I like 15% percentile
+What kind of movies do you like?
+I want top 15%
+Are you a robot?
+I want top 15% fund
+What fund volatility can you take, please? (e.g.up to 10%)
+I can take within 15%
+Good morning, how are you?
+I can take up to 15%
+Good morning, how are you?
+I can take up to 15% volatility
+Good morning, how are you?
+I can take up to 10% volatility
+What fund risk level can you take, please? (low, low to medium, medium, medium to high , high)
+I want low risk level
+Are you a robot?
+I want low risk level fund
+Are you a robot?
+I want low risk funds
+Are you a robot?
+I can take low risk
+What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)
+I want 4.8 stock rating
+Are you a robot?
+I want 4.8
+Are you a robot?
+I want to invest 4.8 stock rating
+Are you a robot?
+I want stocks having ratings at least 4.8
+For investment goal of the whole portfolio, are you looking for stable income, income and growth balanced or active growth, please?
+I am looking for active growth portfolio
+All done! Reply with 'Go Money Go' and wait a second to get your customized recommendations.
+hi
+How are you doing?
+I am doing great.
+What is your question?
+Can you give me some investment suggestioins?
+Sure. Let us get started.
+Nice
+Can I have your name, please? (Please answer in complete sentence. Same as below.)
+My name is Edward.
+May I ask for your age, please?
+My age is 29.
+How much money do you want to invest this time, please?
+I want to invest $5000-$20000.
+What fund size do you want at this time, please? (small, medium, large)
+I want some medium size funds.
+What fund percentile do you want, please? (top 10%, 15%, 30%)
+I want top 30%.
+Are you a robot?
+I want top 30% funds.
+What fund volatility can you take, please? (e.g.up to 10%)
+I can take up to 20%.
+Good morning, how are you?

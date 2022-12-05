@@ -44,6 +44,21 @@ trainer.train(
 )
 
 trainer.train(
+['Can you help me with some investment ideas?',
+'Sure. Let us get started.',]
+)
+
+trainer.train(
+['Can you recommend some stocks and mutual funds to me?',
+'Sure. Let us get started.',]
+)
+
+trainer.train(
+['I need some recommendation for my investment.',
+'Sure. Let us get started.',]
+)
+
+trainer.train(
 ['OK',
 'Can I have your name, please? (Please answer in complete sentence. Same as below.)',]
 )
@@ -60,6 +75,11 @@ trainer.train(
 
 trainer.train(
 ['Sounds Good',
+'Can I have your name, please? (Please answer in complete sentence. Same as below.)',]
+)
+
+trainer.train(
+['Nice',
 'Can I have your name, please? (Please answer in complete sentence. Same as below.)',]
 )
 
@@ -84,28 +104,18 @@ trainer.train(
 )
 
 trainer.train(
-['My name is Qin.',
+['My name is Edward.',
 'May I ask for your age, please? ',]
 )
 
 trainer.train(
-['My name is Alexander.',
-'May I ask for your age, please? ',]
+['My age is 29.',
+'How much money do you want to invest this time, please?',]
 )
 
 trainer.train(
-['Can you help me with some investment ideas?',
-'Sure. Let''s get started.',]
-)
-
-trainer.train(
-['Can you recommend some stocks and mutual funds to me?',
-'Sure. Let''us get started.',]
-)
-
-trainer.train(
-['I need some recommendation for my investment.',
-'Sure. Let''s get started.',]
+['My age is 65.',
+'How much money do you want to invest this time, please?',]
 )
 
 trainer.train(
@@ -154,6 +164,21 @@ trainer.train(
 )
 
 trainer.train(
+['I want top 10%.',
+'What fund volatility can you take, please? (e.g.up to 10%)',]
+)
+
+trainer.train(
+['I want top 30%.',
+'What fund volatility can you take, please? (e.g.up to 10%)',]
+)
+
+trainer.train(
+['I want top 15%.',
+'What fund volatility can you take, please? (e.g.up to 10%)',]
+)
+
+trainer.train(
 ['I can take up to 20% volatility.',
 'What fund risk level do you plan to take with, please? (low, low to medium, medium, medium to high , high)',]
 )
@@ -164,32 +189,77 @@ trainer.train(
 )
 
 trainer.train(
+['I can take up to 20% volatility for the fund.',
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
+)
+
+trainer.train(
+['I can take up to 9% volatility for the fund.',
+'What fund risk level do you plan to take with, please? (low, low to medium, medium, medium to high , high)',]
+)
+
+trainer.train(
 ['I can take low risk.',
-'What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)',]
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
 )
 
 trainer.train(
 ['I can take low to medium risk.',
-'What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)',]
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
 )
 
 trainer.train(
 ['I can take medium risk.',
-'What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)',]
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
 )
 
 trainer.train(
 ['I can take medium to high risk.',
-'What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)',]
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
 )
 
 trainer.train(
 ['I can take high risk.',
-'What stock ratings do you want to invest at least, please? (from 1 to 5, e.g. 4.3)',]
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
+)
+
+trainer.train(
+['I can take low risk for the fund.',
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
+)
+
+trainer.train(
+['I can take low to medium risk for the fund.',
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
+)
+
+trainer.train(
+['I can take medium risk for the fund.',
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
+)
+
+trainer.train(
+['I can take medium to high risk for the fund.',
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
+)
+
+trainer.train(
+['I can take high risk for the fund.',
+'What stock ratings do you want at least, please? (from 1 to 5, e.g. 4.3)',]
 )
 
 trainer.train(
 ['I want stocks having ratings at least 4.5.',
+'All done! Reply with "Go Money Go "and wait a second to get your customized recommendations.',]
+)
+
+trainer.train(
+['I want stocks with ratings at least 4.6.',
+'All done! Reply with "Go Money Go "and wait a second to get your customized recommendations.',]
+)
+
+trainer.train(
+['I want stocks of ratings at least 4.7.',
 'All done! Reply with "Go Money Go "and wait a second to get your customized recommendations.',]
 )
 
